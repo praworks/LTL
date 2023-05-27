@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pdf Merge App</title>
+</head>
+<body>
+	<h1>Pdf Merge App</h1>
+	<p>Enter the names of the PDF files you want to merge:</p>
+	<input type="text" id="pdfList" size="50">
+	<br><br>
+	<label for="pdfFileInput">Or, select PDF files to upload:</label>
+	<input type="file" id="pdfFileInput" accept=".pdf" multiple>
+	<br><br>
+	<button onclick="mergePdfs()">Merge PDFs</button>
+	<button onclick="downloadMergedPdf()">Download Merged PDF</button>
+	<br><br>
+	<h2>PDF List:</h2>
+	<ul id="pdfListView">
+	</ul>
+	<script src="pdfMerge.js"></script>
+</body>
+</html>

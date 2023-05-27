@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USD to LKR Exchange Rate</title>
+</head>
+<body>
+	<h1>USD to LKR Exchange Rate</h1>
+	<p>The USD to LKR exchange rate as of <span id="updated-time"></span> is:</p>
+	<h2><span id="exchange-rate"></span> LKR</h2>
+
+	<script>
+		var data = {
+		  "base": "USD",
+		  "result": {
+		    "LKR": 324.94473
+		  },
+		  "updated": "2023-03-30 08:32:28",
+		  "ms": 2
+		};
+
+		var updated_time = new Date(data.updated);
+		$("#updated-time").text(updated_time.toLocaleString());
+
+		$("#exchange-rate").text(data.result.LKR.toFixed(5));
+	</script>
+</body>
+</html>

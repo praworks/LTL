@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extract design sheet as separated values</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Extract design sheet as separated values</h1>
+          <input type="file" id="fileInput" accept=".txt"><br><br>
+          <textarea autofocus id="input" rows="5" column="50" placeholder="Paste design here" class="form-control"></textarea><br>
+
+          <button onclick="extract()" class="btn btn-primary">Extract Values</button><br><br>
+          <button onclick="copyResults()" class="btn btn-secondary">Copy All Results</button><br><br>
+          <button onclick="sortValues()" class="btn btn-info">Sort Alphabetically</button><br><br>
+
+          <div class="col-md-6">
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Key</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody id="output">
+              </tbody>
+            </table>
+          </div>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extract design sheet as separated values</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Extract design sheet as separated values</h1>
+          <input type="file" id="fileInput" accept=".txt"><br><br>
+          <textarea autofocus id="input" rows="5" column="50" placeholder="Paste design here" class="form-control"></textarea><br>
+
+          <button onclick="extract()" class="btn btn-primary">Extract Values</button><br><br>
+          <button onclick="copyResults()" class="btn btn-secondary">Copy All Results</button><br><br>
+          <button onclick="sortValues()" class="btn btn-info">Sort Alphabetically</button><br><br>
+
+        </div>
+        <div class="col-md-6">
+          <ul id="output" class="table-active"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function extract() {
+        var input = "";
+        if (document.getElementById("fileInput").files.length > 0) {
+          var file = document.getElementById("fileInput").files[0];
+          var reader = new FileReader();
+          reader.onload = function (event) {
+            input = event.target.result;
+            processInput(input);
+          };
+          reader.readAsText(file);
+        } else {
+          input = document.getElementById("input").value;
+          processInput(input);
+        }
+      }
+
+      function processInput(input) {
+        var lines = input.split(/\s*\|\s*|\s*\n\s*/);
+
+        var outputList = document.getElementById("output");
+        outputList.innerHTML = "";
+
+        for (var i = 0; i < lines.length; i++) {
+          var colonIndex = lines[i].indexOf(":");
+          if (colonIndex >= 0) {
+            var beforeColon = lines[i].substring(0, colonIndex).trim();
+            var afterColon = lines[i].substring(colonIndex + 1).trim();
+            var listItem = document.createElement("li");
+            listItem.innerHTML = "<code>" + beforeColon + "</code> : <code>" + afterColon + "</code>";
+            listItem.classList.add("list-item");
+            outputList.appendChild(listItem);
+          }
+        }
+      }
+
+      function copyResults() {
+        var outputList = document.getElementById("output");
+        var extractedValues = "";
+        for (var i = 0; i < outputList.children.length; i++) {
+          extractedValues += outputList.children[i].textContent + "\n";
+        }
+        navigator.clipboard.writeText(extractedValues);
+      }
+
+      function sortValues() {
+        var outputList = document.getElementById("output");
+        var items = outputList.children;
+        var itemsArr = Array.from(items);
+        itemsArr.sort(function (a, b) {
+          var textA = a.textContent.toUpperCase();
+          var textB = b.textContent.toUpperCase();
+          return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        });
+        for (var i = 0; i < itemsArr.length; i++) {
+          outputList.removeChild(itemsArr[i]);
+          outputList.appendChild(itemsArr[i]);
+        }
+      }
+    </script>
+  </body>
+</html>

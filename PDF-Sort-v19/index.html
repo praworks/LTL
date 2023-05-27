@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Sorter</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1>PDF Sorter Application v17</h1>
+    <h6>To sort the PDFs for drawing distribution, follow these steps: select all the PDFs you want to sort, then click
+      the "Choose Files" button. Enter the SAP code and click the "Begin Sort PDF" button, and finally, click the
+      "Download PDF" button. We welcome your feedback.</h6>
+    <div class="mb-1">
+      <label for="pdf-input" class="form-label">Select PDF files to merge:</label>
+      <input type="file" class="form-control" id="pdf-input" multiple>
+      <div>
+        <h6>Selected files:</h6>
+        <div class="mb-5">
+          <u1 id="pdf-list"></u1>
+        </div>
+
+        <div class="mb-1 form-check">
+          <input type="checkbox" class="form-check-input" id="merge-files-checkbox">
+          <label class="form-check-label" for="merge-files-checkbox">Merge unique files and rename to original
+            name</label>
+        </div>
+
+        <div class="mb-1">
+          <label for="sap-code-input" class="form-label">Enter SAP code:</label>
+          <input type="text" class="form-control" id="sap-code-input">
+        </div>
+        <!-------------------------------------------------------------------------------------------------------->
+        <div class="mb-1">
+          <label for="acgk-input" class="form-label">Enter ACGK value:</label>
+          <input type="text" class="form-control" id="acgk-input" value="GASKET">
+        </div>
+        <div class="mb-1">
+          <label for="acot-input" class="form-label">Enter ACOT value:</label>
+          <input type="text" class="form-control" id="acot-input" value="MARSH">
+        </div>
+        <div class="mb-1">
+          <label for="cuas-input" class="form-label">Enter CUAS value:</label>
+          <input type="text" class="form-control" id="cuas-input"
+            value="ASSEMBLY STAGE COPPER, NEUTRAL BUSBAR & EXTENSIONS">
+        </div>
+        <div class="mb-1">
+          <label for="cubb-input" class="form-label">Enter CUBB value:</label>
+          <input type="text" class="form-control" id="cubb-input" value="EARTH BUSBAR">
+        </div>
+        <div class="mb-1">
+          <label for="cufx-input" class="form-label">Enter CUFX value:</label>
+          <input type="text" class="form-control" id="cufx-input" value="FLEX">
+        </div>
+        <div class="mb-1">
+          <label for="culv-input" class="form-label">Enter CULV value:</label>
+          <input type="text" class="form-control" id="culv-input" value="LEAD">
+        </div>
+        <div class="mb-1">
+          <label for="inas-input" class="form-label">Enter INAS value:</label>
+          <input type="text" class="form-control" id="inas-input"
+            value="TAPPING, INSULATION FOR CORE ASSEMBLY, ASSEMBLY STAGE 1 INSULATION, 80-3, ASSEMBLY STAGE 2 INSULATION, 80-4, ASSEMBLY INSULATION">
+        </div>
+        <div class="mb-1">
+          <label for="inbc-input" class="form-label">Enter inbc value:</label>
+          <input type="text" class="form-control" id="inbc-input"
+            value="INSULATION FOR CORE ASSEMBLY, CORE BUILDING INSULATION, 80-7">
+        </div>
+        <div class="mb-1">
+          <label for="inhv-input" class="form-label">Enter INHV value:</label>
+          <input type="text" class="form-control" id="inhv-input" value="HV INSULATION, 80-2, 80.2">
+        </div>
+        <div class="mb-1">
+          <label for="inlv-input" class="form-label">Enter inlv value:</label>
+          <input type="text" class="form-control" id="inlv-input" value="LV INSULATION, 80-1, 80.1">
+        </div>
+        <div class="mb-1">
+          <label for="stbc-input" class="form-label">Enter STBC value:</label>
+          <input type="text" class="form-control" id="stbc-input" value="BOTTOLM CLAMP">
+        </div>
+        <div class="mb-1">
+          <label for="stft-input" class="form-label">Enter STFT value:</label>
+          <input type="text" class="form-control" id="stft-input" value="FOOT">
+        </div>
+        <div class="mb-1">
+          <label for="stlt-input" class="form-label">Enter STLT value:</label>
+          <input type="text" class="form-control" id="stlt-input" value="TRAVERSE">
+        </div>
+        <div class="mb-1">
+          <label for="stpv-input" class="form-label">Enter STPV value:</label>
+          <input type="text" class="form-control" id="stpv-input" value="OUTLINE">
+        </div>
+        <div class="mb-1">
+          <label for="stsr-input" class="form-label">Enter STSR value:</label>
+          <input type="text" class="form-control" id="stsr-input" value="STAY">
+        </div>
+        <div class="mb-1">
+          <label for="sttc-input" class="form-label">Enter STTC value:</label>
+          <input type="text" class="form-control" id="sttc-input" value="TOP CLAMP">
+        </div>
+        <div class="mb-1">
+          <label for="sttr-input" class="form-label">Enter STTR value:</label>
+          <input type="text" class="form-control" id="sttr-input" value="TIE">
+        </div>
+        <div class="mb-1">
+          <label for="tkft-input" class="form-label">Enter TKFT value:</label>
+          <input type="text" class="form-control" id="tkft-input"
+            value="TANK, BASE, COVER, FLANGE, THERMOWELL, THERMOMETER, EARTH FLAG, LIFTING LUG, RADIATOR">
+        </div>
+        <div class="mb-1">
+          <label for="tmas-input" class="form-label">Enter TMAS value:</label>
+          <input type="text" class="form-control" id="tmas-input"
+            value="AXIAL SPACER, WOODEN SUPPORT - TOP, STEPPED BLOCK, ASSEMBLY STAGE TIMBER, 80-5">
+        </div>
+        <div class="mb-1">
+          <label for="tmbc-input" class="form-label">Enter TMBC value:</label>
+          <input type="text" class="form-control" id="tmbc-input"
+            value="AXIAL SPACER, WOODEN SUPPORT - BOTTOM, STEPPED BLOCK, ASSEMBLY STAGE TIMBER, CORE BUILDING TIMBER, 80-6">
+        </div>
+        <div class="mb-1">
+          <label for="wtas-input" class="form-label">Enter WTAS value:</label>
+          <input type="text" class="form-control" id="wtas-input" value="ACTIVE PART ARRANGEMENT">
+        </div>
+        <div class="mb-1">
+          <label for="wtbc-input" class="form-label">Enter WTBC value:</label>
+          <input type="text" class="form-control" id="wtbc-input" value="CUTTING OF CORE STEEL, 6-1">
+        </div>
+        <div class="mb-1">
+          <label for="wthc-input" class="form-label">Enter WTHC value:</label>
+          <input type="text" class="form-control" id="wthc-input"
+            value="HV WINDING TOP, 4-1, HV WINDING DIAGRAM, 5-1, 56-1">
+        </div>
+        <div class="mb-1">
+          <label for="wtlf-input" class="form-label">Enter WTLF value:</label>
+          <input type="text" class="form-control" id="wtlf-input" value="LV WINDING, 3-1">
+        </div>
+        <div class="mb-1">
+          <label for="wttk-input" class="form-label">Enter WTTK value:</label>
+          <input type="text" class="form-control" id="wttk-input" value="VACUUM CHAMBER">
+        </div>
+        <div class="mb-1">
+          <label for="wtts-input" class="form-label">Enter WTTS value:</label>
+          <input type="text" class="form-control" id="wtts-input" value=" CONNECTION & RATIO DIAGRAM, 23-1">
+        </div>
+        <!-------------------------------------------------------------------------------------------------------->
+
+
+        <div class="mb-1">
+          <button type="button" class="btn btn-primary" id="sort-pdf-btn">Begin Sort PDF</button>
+          <button type="button" class="btn btn-success" id="download-pdf-btn" disabled>Download PDF</button>
+        </div>
+
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+      <script>
+        // get the current date and time
+        let currentDate = new Date();
+
+        // format the date and time as a string in YYYYMMDD HHMMSS format
+        let dateTimeString = currentDate.toLocaleString('sv-SE', { timeZone: 'Asia/Kolkata', hour12: false, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }).replace(/[:\s-]/g, '');
+
+        // append the date and time to the file name
+        // let fileName =("sap-code-input") + dateTimeString + ".zip";
+        let fileName = document.getElementById("sap-code-input").value + dateTimeString + ".zip";
+
+        const pdfInput = document.getElementById("pdf-input");
+        const sapCodeInput = document.getElementById("sap-code-input");
+        const acgkInput = document.getElementById("acgk-input");
+        const acotInput = document.getElementById("acot-input");
+        const cuasInput = document.getElementById("cuas-input");
+        const cubbInput = document.getElementById("cubb-input");
+        const cufxInput = document.getElementById("cufx-input");
+        const culvInput = document.getElementById("culv-input");
+        const inasInput = document.getElementById("inas-input");
+        const inbcInput = document.getElementById("inbc-input");
+        const inhvInput = document.getElementById("inhv-input");
+        const inlvInput = document.getElementById("inlv-input");
+        const stbcInput = document.getElementById("stbc-input");
+        const stftInput = document.getElementById("stft-input");
+        const stltInput = document.getElementById("stlt-input");
+        const stpvInput = document.getElementById("stpv-input");
+        const stsrInput = document.getElementById("stsr-input");
+        const sttcInput = document.getElementById("sttc-input");
+        const sttrInput = document.getElementById("sttr-input");
+        const tkftInput = document.getElementById("tkft-input");
+        const tmasInput = document.getElementById("tmas-input");
+        const tmbcInput = document.getElementById("tmbc-input");
+        const wtasInput = document.getElementById("wtas-input");
+        const wtbcInput = document.getElementById("wtbc-input");
+        const wthcInput = document.getElementById("wthc-input");
+        const wtlfInput = document.getElementById("wtlf-input");
+        const wttkInput = document.getElementById("wttk-input");
+        const wttsInput = document.getElementById("wtts-input");
+
+        const sortPdfBtn = document.getElementById("sort-pdf-btn");
+        const downloadPdfBtn = document.getElementById("download-pdf-btn");
+        const pdfList = document.getElementById("pdf-list");
+        let pdfFiles = [];
+        let zip = new JSZip();
+
+        pdfInput.addEventListener("change", function () {
+          pdfFiles = Array.from(this.files);
+          pdfList.innerHTML = "";
+          pdfFiles.forEach(function (file) {
+            const listItem = document.createElement("li");
+            listItem.textContent = file.name;
+            pdfList.appendChild(listItem);
+          });
+        });
+
+        document.querySelector('#sort-pdf-button').addEventListener('click', () => {
+          const pdfInput = document.querySelector('#pdf-input');
+          const sapCodeInput = document.querySelector('#sap-code-input');
+          const mergeFilesCheckbox = document.querySelector('#merge-files-checkbox');
+          const pdfList = document.querySelector('#pdf-list');
+
+          if (pdfInput.files.length === 0) {
+            alert('Please select at least one file to sort.');
+            return;
+          }
+
+          if (sapCodeInput.value.trim() === '') {
+            alert('Please enter a valid SAP code.');
+            return;
+          }
+
+          if (mergeFilesCheckbox.checked) {
+            const mergedPdf = new jsPDF();
+
+            // Merge the files
+            for (let i = 0; i < pdfInput.files.length; i++) {
+              const file = pdfInput.files[i];
+
+              const reader = new FileReader();
+              reader.onload = () => {
+                mergedPdf.addPage(reader.result);
+                if (i === pdfInput.files.length - 1) {
+                  // All files have been merged
+                  // Rename the merged file to the original file name
+                  const fileName = pdfInput.files[0].name.split('.').slice(0, -1).join('.');
+                  mergedPdf.save(`${fileName}.pdf`);
+                }
+              };
+              reader.readAsDataURL(file);
+            }
+          } else {
+            // Sort the files
+            const formData = new FormData();
+            formData.append('sapCode', sapCodeInput.value.trim());
+            for (let i = 0; i < pdfInput.files.length; i++) {
+              formData.append('files[]', pdfInput.files[i]);
+              const li = document.createElement('li');
+              li.textContent = pdfInput.files[i].name;
+              pdfList.appendChild(li);
+            }
+            // Submit the form
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '/sort-pdf');
+            xhr.onload = () => {
+              if (xhr.status === 200) {
+                const blob = new Blob([xhr.response], { type: 'application/pdf' });
+                const fileName = `Sorted_${sapCodeInput.value.trim()}.pdf`;
+                saveAs(blob, fileName);
+              } else {
+                alert('Failed to sort PDFs.');
+              }
+            };
+            xhr.send(formData);
+          }
+          downloadPdfBtn.disabled = false;
+
+        });
+
+        downloadPdfBtn.addEventListener("click", function () {
+          zip.generateAsync({ type: "blob" })
+            .then(function (content) {
+              saveAs(content, fileName);
+            });
+        });
+      </script>
+</body>
+
+</html>
