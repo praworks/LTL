@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extract design sheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="md-6">
+                <h1>Extract design sheet as values</h1>
+                <input type="file" id="fileInput" accept=".txt"><br><br>
+                <textarea autofocus id="input" rows="5" column="50" placeholder="Paste design here"
+                    class="form-control"></textarea><br>
+
+                <button onclick="extractValues()" class="btn btn-primary">Extract Values</button><br><br>
+                <button onclick="sortValues()" class="btn btn-info">Sort Alphabetically</button><br><br>
+
+                <h1>Extract design sheet as table</h1>
+                <textarea autofocus id="inputTable" rows="5" column="50" placeholder="Paste design here"
+                    class="form-control"></textarea><br>
+
+                <button onclick="extractTable()" class="btn btn-primary">Extract Values</button><br><br>
+                <button onclick="copyResults()" class="btn btn-secondary">Copy All Results</button><br><br>
+            </div>
+            <div class="md-6">
+                <ul id="outputValues" class="list"></ul>
+                <br>
+                <table id="outputTable">
+                    <thead>
+                        <tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <script>
+        var data = [];
+
+        function extractValues() {
+            var input = "";
+            if (document.getElementById("fileInput").files.length > 0) {
+                var file = document.getElementById("fileInput").files[0];
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    input = event.target.result;
+                    processValues(input);
+                };
+                reader.readAsText(file);
+            } else {
+                input = document.getElementById("input").value;
+                processValues(input);
+            }
+        }
+
+        function processValues(input) {
+            var lines = input.split(/\s*\|\s*|\s*\n\s*/);
+            var outputList = document.getElementById("outputValues");
+            outputList.innerHTML = "";
+
+            for (var i = 0; i < lines.length; i++) {
+                var colonIndex = lines[i].indexOf(":");
+                if (colonIndex >= 0) {
+                    var beforeColon = lines[i].substring(0, colonIndex).trim();
+                    var afterColon = lines[i].substring(colonIndex + 1).trim();
+                    var listItem = document.createElement("li");
+                    listItem.innerHTML = "<code>" + beforeColon + "</code> : <code>" + afterColon + "</code>";
+                    listItem.classList.add("list-item");
+                    outputList.appendChild(listItem);
+                }
+            }
+        }
+
+        function sortValues() {
+            var outputList = document.getElementById("outputValues");
+            var items = Array.from(outputList.children);
+
+            items.sort(function (a, b) {
+                var textA = a.textContent.toUpperCase();
+                var textB = b.textContent.toUpperCase();
+                return textA.localeCompare(textB);
+            });
+
+            items.forEach(function (item) {
+                outputList.appendChild(item);
+            });
+        }
+
+        function extractTable() {
+            var input = document.getElementById("inputTable").value;
+            var lines = input.split(/\s*\|\s*|\s*\n\s*/);
+            var outputTable = document.getElementById("outputTable");
+            outputTable.innerHTML = "";
+            data = [];
+
+            var headerRow = outputTable.insertRow();
+            headerRow.insertCell().innerHTML = "<b>Field</b>";
+            headerRow.insertCell().innerHTML = "<b>Value</b>";
+            for (var j = 1; j <= 30; j++) {
+                headerRow.insertCell().innerHTML = "<b>Value-" + j + "</b>";
+            }
+
+            for (var i = 0; i < lines.length; i++) {
+                var colonIndex = lines[i].indexOf(":");
+                var kvaIndex = lines[i].toLowerCase().indexOf("kva");
+                if (colonIndex >= 0 || kvaIndex >= 0) {
+                    var splitIndex = kvaIndex >= 0 ? kvaIndex + 3 : colonIndex;
+                    var beforeSplit = lines[i].substring(0, splitIndex).trim();
+                    var afterSplit = lines[i].substring(splitIndex + 0).trim();
+                    var values = afterSplit.split(/[\/\s,^x-]+|-|:/);
+                    var row = outputTable.insertRow();
+                    row.insertCell().innerHTML = beforeSplit;
+                    row.insertCell().innerHTML = values[0];
+                    for (var k = 1; k <= 30; k++) {
+                        var value = k < values.length ? values[k] : "";
+                        row.insertCell().innerHTML = value;
+                    }
+                    data.push([beforeSplit, values.join(",")]);
+                }
+            }
+        }
+
+        function copyResults() {
+            var table = document.getElementById("outputTable");
+            var range = document.createRange();
+            range.selectNode(table);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+        }
+
+        function download() {
+            var workbook = XLSX.utils.book_new();
+            var worksheet = XLSX.utils.aoa_to_sheet(data);
+            XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet1");
+            var file = XLSX.write(workbook, { bookType: "xlsx", type: "array" });
+            saveAs(new Blob([file]), fileName);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extract design sheet as separated values</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="md-6">
+                <h1>Extract design sheet as separated values</h1>
+                <input type="file" id="fileInput" accept=".txt"><br><br>
+                <textarea autofocus id="input" rows="5" column="50" placeholder="Paste design here"
+                    class="form-control"></textarea><br>
+
+                <button onclick="extract()" class="btn btn-primary">Extract Values</button><br><br>
+                <button onclick="sortValues()" class="btn btn-info">Sort Alphabetically</button><br><br>
+
+            </div>
+            <div class="md-6">
+                <ul id="output" class="list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function extract() {
+            // Get the input text
+            var input = "";
+            if (document.getElementById("fileInput").files.length > 0) {
+                var file = document.getElementById("fileInput").files[0];
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    input = event.target.result;
+                    processInput(input);
+                };
+                reader.readAsText(file);
+            } else {
+                input = document.getElementById("input").value;
+                processInput(input);
+            }
+        }
+
+        function processInput(input) {
+            // Split the input text into lines
+            var lines = input.split(/\s*\|\s*|\s*\n\s*/);
+
+            // Clear the output list
+            var outputList = document.getElementById("output");
+            outputList.innerHTML = "";
+
+            // Loop through the lines
+            for (var i = 0; i < lines.length; i++) {
+                // Find the index of the ":" character
+                var colonIndex = lines[i].indexOf(":");
+
+                // If there is a ":" character, extract the values before and after it
+                if (colonIndex >= 0) {
+                    var beforeColon = lines[i].substring(0, colonIndex).trim();
+                    var afterColon = lines[i].substring(colonIndex + 1).trim();
+
+                    // Add the extracted values to the output list
+                    var listItem = document.createElement("li");
+                    listItem.innerHTML = "<code>" + beforeColon + "</code> : <code>" + afterColon + "</code>";
+                    listItem.classList.add("list-item");
+                    outputList.appendChild(listItem);
+                }
+            }
+        }
+
+        function sortValues() {
+            var outputList = document.getElementById("output");
+            var items = outputList.children;
+
+            // Convert the list of extracted values to an array
+            var itemsArr = Array.from(items);
+
+            // Sort the array alphabetically by the text content of each list item
+            itemsArr.sort(function (a, b) {
+                var textA = a.textContent.toUpperCase();
+                var textB = b.textContent.toUpperCase();
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
+
+            // Remove the existing list items and add the sorted items back to the list
+            for (var i = 0; i < itemsArr.length; i++) {
+                outputList.removeChild(itemsArr[i]);
+                outputList.appendChild(itemsArr[i]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
