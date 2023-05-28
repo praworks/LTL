@@ -1,0 +1,171 @@
+# Lay : Max/Min tpl: 12# 182.00/ 22.00 *
+# Sup Pts/Ax All.. : 12 /  0.000 mm
+% X / % R / % Lead : 6.53/0.80/0.12 %
+% Z (HV-LV-Lead).. : 6.701 %
+% Z Guaranteed.... : 6.000 %
+100 % Exc Current. : 0.2569
+Active Part Weight : 2768 kg
+Add Rad Allowance. : 0.000 mm
+Adjusted Builds... : 90.37 /  92.23 /  47.84 /  29.90 /  14.59   (Delta Build  90.37)
+Adjusted Widths... : 220.00 / 200.00 / 170.00 / 140.00 / 100.00
+Assy and Misc..... : 1127
+Average LayIns Tk. : 2.000 mm
+Axial Allowance... : 0.000 mm
+Axial Sections.... : 1
+Bracing Cost...... : 216
+Bus Bar : Wd / Tk..:  80.000 / 10.000 mm
+Bus bar/TC Weight. : 21/     0 kg
+C&C Dim : Ht/Lgth..:  1137.00/1439.86 mm
+Case : Lt/Wd/Ht(mm):1639.9x 755.0x1580.0
+Case Steel/Cooling : 0.78 /  1.71
+Case/Cooling Cost. : 70/     853
+Center to Center.. : 487.621 mm
+Circuit Load Factors : HV= 1.000,   LV= 1.000,   TV= 1.000
+Circuit Load Factors : HV= 1.000,   LV= 1.000,   TV= 1.000
+Clamp & Brace Wt.. : 277 kg
+Coil-Length....... : 670.000 mm
+Coil-Length....... : 670.000 mm
+Cond Area Per Turn : 7.30617 mm2
+Cond Mec/Elec Lgth : 580.000 /  576.824
+Cond-Dim Per Turn. : 1x1x 3.050 x 3.050
+Cond/Lead Weight.. : 348.24 /  37.76 kg
+Conductor Dims.... : Specified Size
+Conductor Dims.... : Standard Size
+Conductor......... : CU-Round
+Cooling Ducts Tk/# : 4.500 mm /  1.67
+Cooling Ducts Tk/# : 4.500 mm / 1.00
+CORE : Std(NO ) Wds(YES) C-C(NO ) Diag(NO ),  COND: Foil Tk(NO ),  CLEAR: Wdg(NO ),  CASE: Std(NO )  CALC: Sh Cir(YES)
+Core Cost......... : 3.59
+Core Cost......... : 6132
+Core Design....... : OVAL-IY  Mitered
+Core Gross Weight. : 1778.6 kg
+Core Net Weight... : 1708.1 kg
+Core Perimeter.... : 871.9 mm
+Core Scrap Weight. : 70.5 kg
+Cov/Case & Cooling : 78/   590 kg
+CURRENT DENSITY... : 2.212 A/mm2
+CURRENT DENSITY... : 2.355 A/mm2
+Data File Name : D:\LTL Transformer Design 6100\ReportVB.dat
+DATE : 2023.03.14                           LIQUID TYPE TRANSFORMER CALCULATION (Version 6.10.0)               Time: 10:04:41
+Delta Build....... : 85.1 mm
+Design Matl-Cost.. : 20880
+Diagonal Dimension : 220.000 x 310.372 mm
+E Rnd Wire : AL/CU.:  4.56 / 11.27
+Eff Hi-Lo ElecSpan : 18.000 mm
+Eff No Cool Ducts. : HV: 1 Leg: 1 LV: 1
+Eff No Cool Ducts. : HV: 2 Leg: 1 LV: 2
+ELECT LENGTH...... : 630.000  mm
+EVALUATED COST.... : 20880
+EVALUATED LOSSES.. : 0
+Foil Cond : AL/CU..:  3.59 / 11.12
+Grade/Frame Type.. : 23ZDKH / 3-Leg
+Gross/Net CSA..... : 521.1 / 503.9 cm2
+H-L Barrier Weight : 27.57 kg
+HV / LV Coil Cost. : 6707/     4339
+HV : 33000 + 2- 2x 2.50 %  TC: Off-load Tap Changer                  BIL: 200 (Delta)   Line/Coil Amps:   27.993/  16.162
+HV Conductor Wt... : 565.77 kg
+HV Fixed Gap...... : 0.000 mm
+HV Watts (% Eddy). : 6635 ( 6.4)
+HV Wdg DC Losses.. : 6213  Watts
+HV-Ends........... : 100.000 mm
+HV-HSide/HV-LSide. : 75.00 / 75.00 mm
+Impedance Model : Convensional
+INDUCTION......... : 1.530 Tesla
+Inner Perimeter... : 877.0 mm
+Inside Dimensions. : 225.000 x315.372 mm
+Inside Dimensions. : 323.548 x 413.920
+Insulation Weight. : 70.02 kg
+KVA -   1600  Liquid Type      ONAN Cooling    62 C Rise     Three Phase     50 Hz     Style Number : EU2021
+Labor & VOH/Hours. : 0 /   0
+Lay/Trn/Duc Wts... : 67.20/  0.00/  2.81
+Lay/Trn/Duc Wts... : 9.66/  0.00/  1.16
+Layer Insul Tk.... : 0.300 mm
+Layer-Layer Volts. : 6216.6
+Layer/Turn Ins Bd. : 2.000/  0.126 mm
+LayIns RB W/OvBld. : 22.73 mm
+LayIns Tk......... : (10 Full)  2.000 mm
+Lead : Wd / Tk..:  80.000 / 10.000 mm
+LME/1000 (CU/AL).. : 0 /        0
+LV : 415                                                           BIL:   3  (Wye)    Line/Coil Amps: 2225.929/2225.929
+LV Bus Bar / Stray : 392 /    765
+LV Cond to Yoke... : 33.500 mm
+LV to Core Leg(mm) : 2.50x  2.50x  7.00
+LV Watts (% Eddy). : 4942 ( 4.4)
+LV Wdg DC Losses.. : 4553  Watts
+Main Step Lead Add : 5.3 mm
+MARG/MULT. : : Top Oil=  0 H=  0 L=  0 T=  0 : Core= 1.000 BusB=   1.0 Eddy H=   1.0 L=   1.0 Stray=   1.0
+Max LV Sup Span... : 59.000 mm
+Max No Load/Load.. : 1242 /   13200
+Max Turn Lth Buckl : 2502.563 mm
+Mean Turn Length.. : 1432.9 mm
+Mean Turn Length.. : 985.853 mm
+Mineral Oil Weight : 1464 kg
+Mineral Oil....... : 1434
+Mineral/Silicone.. : 0.98 /  6.12
+Netw.Short Cir.Cap : 1000.0  MVA
+No Load Losses.... : 1230  Watts
+No of Ribs : 1,2,3,4:   27/  12/  27/  12
+NOTES : HV Axial & Rad Factors -  1.000,  0.880     LV Rad Factor -   0.930     OPT By: (Min Evaluated Cost )
+Num Support Sticks : 12
+ORDER : 160033EU      DESIGN: Data Set 1    ENGINEER: Akila           CUSTOMER NAME: CEB
+Outside Dimensions : 287.548 x377.920 mm
+Outside Dimensions : 464.621 x 563.993
+Ovality Factor.... : 1.303
+Peak HV Inrush Cur : 192 amp
+Ph-Ph Elec Spacing : 23.000 mm
+Rad Blds (H,Leg,L) : 31.27/ 31.27/ 31.27
+Rad Blds (H,Leg,L) : 75.04/ 70.54/ 75.04
+RECOMMENDED PRICE. : 41759
+Rect Wire : Al/Cu.:  5.63 /  7.37
+Resistance (Coil). : 0.000306 @ 75 C
+Resistance (Coil). : 7.9294 @ 75 C
+Rib Depth : 1,2,3,4:  300/  80/ 300/  80
+Rib Height : 1,2,3,4: 1300/1300/1300/1300
+Rib Pan Wd : 1,2,3,4: 1640/ 755/1640/ 755
+Rib Pitch : 1,2,3,4:   60/  60/  60/  60
+Rib Thick : 1,2,3,4: 1.20/1.20/1.20/1.20
+Ribs-Press/Weight. : 0.04 kp/cm2   500
+Short-Circuit Curr : 77404 Amp.
+Sound/Natural Freq : 51.4 db /   604 Hz
+Standard Core No.. : NONE STANDARD
+Step 1 : 220.000,  85.088 mm   649.7 kg
+Step 2 : 200.000,  92.230 mm   632.0 kg
+Step 3 : 170.000,  47.840 mm   273.2 kg
+Step 4 : 140.000,  29.900 mm   137.8 kg
+Step 5 : 100.000,  26.220 mm    86.3 kg
+Step 6 : 0.000,   0.000 mm     0.0 kg
+Step 7 : 0.000,   0.000 mm     0.0 kg
+Step 8 : 0.000,   0.000 mm     0.0 kg
+Step 9 : 0.000,   0.000 mm     0.0 kg
+Step Lead Allow... : 11.625 mm
+Strip-#x#x Wd x Tk : 1x1x 630.00 x 1.500
+T-RISE/GRADIENT... : 55.3/16.0 deg C
+T-RISE/GRADIENT... : 55.4/16.1 deg C
+Tapping Turns @....... : 1 - 2024, 2 - 1976, 3 - 1928, 4 - 1880, 5 - 1832
+Top Oil Rise Limit : 55.0 deg C
+TOP OIL RISE...... : 49.1 deg C
+Tot-Ld Watts(%Ed). : 12735 (14.1)
+Total Coil Weight. : 396.83 kg
+Total Coil Weight. : 635.79 kg
+Total HV-LV Offset : 50.000 mm
+Total Insul Weight : 10.82 kg
+Total Losses(ONAN) : 13964 @  75 C
+Total Weight...... : 5198 kg
+Turn CSA ......... : 945.000 mm2
+Turn/Lay/DD Insul. : 2.18 /  3.28 / 4.14
+TURNS PER COIL.... : 1 x   14.0
+Turns Tot./Nominal : 2024/   1928
+Type of Coil...... : CU-Foil
+Type of Coil...... : Layer-Wound Coil
+Using LTL Core Loss Calculation Technical Standard : < YES >
+Using LTL Load Loss Calculation Technical Standard : < NO  >
+Utilization Factor : 0.9185
+Variable Cost..... : 20880
+VPT, W/kg, PBase.. : 17.114, 0.720, 0.591
+Watts/sq m ....... : 571.686
+Watts/sq m ....... : 828.915
+Wdg Rise Limit.... : 62.0 deg C
+Weight of Core-Leg : 996.0 kg
+Weight of Yoke.... : 712.5 kg
+Window Height..... : 697.000 mm
+Yoke-Case Top/Bot. : 402.00 / 41.00 mm
