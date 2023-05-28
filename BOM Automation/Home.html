@@ -8,6 +8,7 @@
 
 	<input type="file" id="fileInput">
 	<button onclick="processTextFile()">Upload</button>
+	<button onclick="copyTable()">Copy Table</button> <!-- Added copy button -->
 
 	<table id="output">
 		<tr>
@@ -79,6 +80,16 @@
 
 				reader.readAsText(file);
 			}
+		}
+
+		function copyTable() {
+			var outputTable = document.getElementById("output");
+			var range = document.createRange();
+			range.selectNode(outputTable);
+			window.getSelection().removeAllRanges();
+			window.getSelection().addRange(range);
+			document.execCommand("copy");
+			window.getSelection().removeAllRanges();
 		}
 	</script>
 </body>
