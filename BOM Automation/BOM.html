@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill of Materials</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        .icon-cell {
+            width: 50px;
+        }
+        
+        .icon-img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bill of Materials</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th class="icon-cell"></th>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+                $csvFile = 'sap.CSV'; // Path to your SAP CSV file
+                $csvData = file_get_contents($csvFile);
+                $lines = explode(PHP_EOL, $csvData);
+                foreach ($lines as $line) {
+                    $data = str_getcsv($line);
+                    $sapItemCode = $data[0];
+                    $itemDescription = $data[1];
+                    $quantity = $data[2];
+                    $iconPath = 'Icons/' . $sapItemCode . '.jpg';
+                    
+                    echo '<tr>';
+                    echo '<td class="icon-cell"><img class="icon-img" src="' . $iconPath . '" alt="Icon"></td>';
+                    echo '<td>' . $sapItemCode . '</td>';
+                    echo '<td>' . $itemDescription . '</td>';
+                    echo '<td>' . $quantity . '</td>';
+                    echo '</tr>';
+                }
+            ?>
+        </tbody>
+    </table>
+    
+</body>
+</html>
