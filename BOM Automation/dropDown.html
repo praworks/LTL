@@ -1,77 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Item Selection</title>
+    <title>Item Table View</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Item Selection</h1>
+    <h1>Item Table View</h1>
 
-    <form>
-        <label for="item">Select an item:</label>
-        <select id="item" name="item">
-            <option value="">-- Select Item --</option>
-        </select>
-        <br><br>
-        <button type="button" onclick="displaySelectedItem()">Show Details</button>
-    </form>
+    <table id="itemTable">
+        <thead>
+            <tr>
+                <!--<th class="icon-cell"></th>
+                <th>Item Code</th>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Price</th> -->
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
-    <div id="itemDetails"></div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const dropdown = document.getElementById('item');
-
-            fetch('items.csv')
-                .then(response => response.text())
-                .then(csvData => {
-                    const lines = csvData.split(/\r?\n/);
-                    lines.forEach(line => {
-                        const data = line.split(',');
-                        const item = data[0];
-                        const option = document.createElement('option');
-                        option.value = item;
-                        option.textContent = item;
-                        dropdown.appendChild(option);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching the CSV file:', error);
-                });
-        });
-
-        function displaySelectedItem() {
-            const selectedValue = document.getElementById('item').value;
-            const itemDetailsDiv = document.getElementById('itemDetails');
-            itemDetailsDiv.innerHTML = '';
-
-            fetch('items.csv')
-                .then(response => response.text())
-                .then(csvData => {
-                    const lines = csvData.split(/\r?\n/);
-                    const selectedItem = lines.find(line => line.startsWith(selectedValue));
-                    if (selectedItem) {
-                        const data = selectedItem.split(',');
-                        const itemCode = data[0];
-                        const description = data[1];
-                        const prices = data.slice(2);
-                        const itemDetailsHTML = `
-                            <h2>Item Details</h2>
-                            <p><strong>Item Code:</strong> ${itemCode}</p>
-                            <p><strong>Description:</strong> ${description}</p>
-                            <p><strong>Prices:</strong></p>
-                            <ul>
-                                ${prices.map((price, index) => `<li>Price${index + 1}: ${price}</li>`).join('')}
-                            </ul>
-                        `;
-                        itemDetailsDiv.innerHTML = itemDetailsHTML;
-                    } else {
-                        itemDetailsDiv.textContent = 'No item selected.';
-                    }
-                })
-                .catch(error => {
-                    console.error('Error fetching the CSV file:', error);
-                });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
