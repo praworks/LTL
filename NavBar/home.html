@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive Sidebar</title>
+  <!-- Link Styles -->
+  <link rel="stylesheet" href="navstyle.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div id="navbar"></div>
+
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+  <section class="home-section">
+    <div class="text">Dashboard</div>
+  </section>
+</body>
+</html>
