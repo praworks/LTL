@@ -1,8 +1,8 @@
 ﻿Item code,Tag,Description,Ex. Works Price,CIF,Duty Free,Duty Paid,Export
-OLBK0002,Oil,Inhibited Mineral Oil,,,,,
-OLBK0001,Oil,Unhibited Mineral Oil,,,,,
-ACIN0013,LV Foil,215 x 0.19,,,,,
-ACIN0014,LV Foil,240 x 0.27,,,,,
+OLBK0002,Oil,Inhibited Mineral Oil,100,100,100,100,100
+OLBK0001,Oil,Unhibited Mineral Oil,100,100,100,100,100
+ACIN0013,LV Foil,215 x 0.19,100,100,100,100,100
+ACIN0014,LV Foil,240 x 0.27,100,100,100,100,100
 ACIN0015,LV Foil,275 x 0.40,,,,,
 ACIN0016,LV Foil,275 x 0.27,,,,,
 ACIN0017,LV Foil,280 x 0.25,,,,,

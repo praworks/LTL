@@ -20,6 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <td>${tag}</td>
                     <td>${description}</td>
                     <td>${prices[0]}</td>
+                    <td>${prices[1]}</td>
+                    <td>${prices[2]}</td>
+                    <td>${prices[3]}</td>
+                    <td>${prices[4]}</td>
                 `;
 
                 tableBody.appendChild(row);
