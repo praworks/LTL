@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .icon-cell {
-            width: 10px;
+            width: 1px;
         }
 
         .icon-img {
@@ -20,7 +20,7 @@
 
         th, td {
             padding: 10px;
-            text-align: left;
+            text-align: center;
             border-bottom: 1px solid #ddd;
         }
 
@@ -128,12 +128,6 @@
                         row.insertBefore(tickCell, row.firstChild);
 
                         tableBody.appendChild(row);
-                    });
-
-                    // Handle selected items and navigate to new page
-                    const navigateButton = document.querySelector('#navigateButton');
-                    navigateButton.addEventListener('click', function() {
-                        openNewPage(selectedItems);
                     });
 
                     // Handle reset button

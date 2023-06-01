@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selected Items</title>
+</head>
+<body>
+  <ul id="selected-items"></ul>
+
+  <script>
+    // Sample CSV data
+    const csvData = items.csvData
+
+    // Split the CSV data into rows
+    const rows = csvData.split('\n');
+
+    // Get the header row
+    const header = rows[0].split(',');
+
+    // Find the index of the 'Selected' column
+    const selectedIndex = header.findIndex(column => column === 'Selected');
+
+    // Loop through the rows
+    for (let i = 1; i < rows.length; i++) {
+      const values = rows[i].split(',');
+
+      // Check if the item is selected
+      if (values[selectedIndex] === 'Yes') {
+        const li = document.createElement('li');
+
+        // Loop through the columns
+        for (let j = 1; j < values.length; j++) {
+          const span = document.createElement('span');
+          span.style.fontWeight = 'bold';
+          span.innerText = `${header[j]}: `;
+          li.appendChild(span);
+
+          const value = document.createTextNode(values[j]);
+          li.appendChild(value);
+
+          li.appendChild(document.createElement('br'));
+        }
+
+        document.getElementById('selected-items').appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>

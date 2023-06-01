@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Items Table</title>
+  <style>
+    /* CSS styles omitted for brevity */
+  </style>
+  <script>
+    // Function to fetch the CSV file and generate the table
+    function generateTable() {
+      var csvFile = '';
+
+      // Check if "File" is uploaded
+      if (typeof File !== 'undefined') {
+        var fileInput = document.querySelector('input[type="file"]');
+        var uploadedFile = fileInput.files[0];
+        if (uploadedFile) {
+          csvFile = uploadedFile.name;
+        }
+      }
+
+      // Use default "items.csv" if no file is uploaded
+      if (!csvFile) {
+        csvFile = 'items.csv';
+      }
+
+      // Fetch the CSV file
+      fetch(csvFile)
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(csvData) {
+          // Parse CSV data
+          var rows = csvData.split('\n');
+          var tableHTML = '<table>';
+
+          // Generate the table rows
+          for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].split(',');
+            tableHTML += '<tr>';
+
+            // Add the checkbox column
+            tableHTML += '<td><input type="checkbox" onclick="toggleSelected(this)"></td>';
+
+            // Add the icon column
+            var iconPath = 'icons/' + cells[1] + '.jpg';  // Assuming item code is in the second column
+            tableHTML += '<td><img class="item-icon" src="' + iconPath + '"></td>';
+
+            // Add the remaining columns
+            for (var j = 0; j < cells.length; j++) {
+              tableHTML += '<td>' + cells[j] + '</td>';
+            }
+
+            tableHTML += '</tr>';
+          }
+
+          tableHTML += '</table>';
+
+          // Append the table to the "table-container" div
+          document.getElementById('table-container').innerHTML = tableHTML;
+        });
+    }
+
+    // Function to toggle the selected state and highlight the row
+    function toggleSelected(checkbox) {
+      var row = checkbox.parentNode.parentNode;
+
+      if (checkbox.checked) {
+        row.classList.add('selected');
+      } else {
+        row.classList.remove('selected');
+      }
+    }
+
+    // Function to display selected items in a new table
+    function showSelectedItems() {
+      // Rest of the code...
+    }
+
+    // Function to download selected items as CSV
+    function downloadSelectedItems() {
+      // Rest of the code...
+    }
+
+    // Generate the table on page load
+    window.addEventListener('load', generateTable);
+  </script>
+</head>
+<body>
+  <h1>Items Table</h1>
+
+  <!-- File upload input field -->
+  <input type="file">
+
+  <!-- Button to show selected items -->
+  <button onclick="showSelectedItems()">Show Selected Items</button>
+
+  <!-- Button to download selected items as CSV -->
+  <button onclick="downloadSelectedItems()">Download Selected Items</button>
+
+  <!-- Container for the table -->
+  <div id="table-container"></div>
+</body>
+</html>

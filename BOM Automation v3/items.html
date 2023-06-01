@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Items Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    
+    th:nth-child(5),
+    th:nth-child(6),
+    th:nth-child(7),
+    th:nth-child(8),
+    th:nth-child(9),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7),
+    td:nth-child(8),
+    td:nth-child(9) {
+      width: 100px;
+    }
+    
+    /* Set width for the icon column */
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 50px;
+    }
+    
+    /* Set width for the Description column */
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 200px;
+    }
+    
+    /* Style the icons */
+    .item-icon {
+      display: block;
+      width: 50px;
+      height: auto;
+      margin: 0 auto; /* Center the icons horizontally */
+      transition: width 0.3s ease; /* Add transition effect */
+    }
+    
+    /* Enlarge the icons on hover */
+    .item-icon:hover {
+      width: 250px;
+    }
+    
+    /* Highlight the selected rows */
+    .selected {
+      background-color: yellow;
+    }
+  </style>
+  <script>
+    // Function to fetch the CSV file and generate the table
+    function generateTable() {
+      var csvFile = 'items.csv';  // Replace with your CSV file path
+      
+      // Fetch the CSV file
+      fetch(csvFile)
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(csvData) {
+          // Parse CSV data
+          var rows = csvData.split('\n');
+          var tableHTML = '<table>';
+          
+          // Generate the table rows
+          for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].split(',');
+            tableHTML += '<tr>';
+            
+            // Add the checkbox column
+            tableHTML += '<td><input type="checkbox" onclick="toggleSelected(this)"></td>';
+            
+            // Add the icon column
+            var iconPath = 'icons/' + cells[1] + '.jpg';  // Assuming item code is in the second column
+            tableHTML += '<td><img class="item-icon" src="' + iconPath + '"></td>';
+            
+            // Add the remaining columns
+            for (var j = 0; j < cells.length; j++) {
+              tableHTML += '<td>' + cells[j] + '</td>';
+            }
+            
+            tableHTML += '</tr>';
+          }
+          
+          tableHTML += '</table>';
+          
+          // Append the table to the "table-container" div
+          document.getElementById('table-container').innerHTML = tableHTML;
+        });
+    }
+    
+    // Function to toggle the selected state and highlight the row
+    function toggleSelected(checkbox) {
+      var row = checkbox.parentNode.parentNode;
+      
+      if (checkbox.checked) {
+        row.classList.add('selected');
+      } else {
+        row.classList.remove('selected');
+      }
+    }
+    
+    // Generate the table on page load
+    window.addEventListener('load', generateTable);
+  </script>
+</head>
+<body>
+  <h1>Items Table</h1>
+  
+  <!-- Container for the table -->
+  <div id="table-container"></div>
+</body>
+</html>
