@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Session Storage Example</title>
+  <script>
+    function saveData() {
+      var usernameInput = document.getElementById('username');
+      var emailInput = document.getElementById('email');
+      var username = usernameInput.value;
+      var email = emailInput.value;
+
+      if (username && email) {
+        sessionStorage.setItem('username', username);
+        sessionStorage.setItem('email', email);
+        
+        alert('Data saved successfully!');
+      } else {
+        alert('Please enter both username and email.');
+      }
+    }
+    
+    function displayData() {
+      var username = sessionStorage.getItem('username');
+      var email = sessionStorage.getItem('email');
+      
+      if (username && email) {
+        document.getElementById('display-username').textContent = username;
+        document.getElementById('display-email').textContent = email;
+      }
+    }
+  </script>
+</head>
+<body onload="displayData()">
+  <h1>Session Storage Example</h1>
+  
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+  </div>
+  
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+  </div>
+  
+  <button onclick="saveData()">Save Data</button>
+  
+  <h2>Saved Data:</h2>
+  
+  <div>
+    <p><strong>Username:</strong> <span id="display-username"></span></p>
+    <p><strong>Email:</strong> <span id="display-email"></span></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selection Page</title>
+  <script>
+    function saveSelection() {
+      var selectedItems = [];
+
+      // Get the selected checkboxes
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      checkboxes.forEach(function(checkbox) {
+        selectedItems.push(checkbox.value);
+      });
+
+      // Store the selected items in sessionStorage
+      sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
+
+      // Redirect to the next page
+      window.location.href = 'page2.html';
+    }
+  </script>
+</head>
+<body>
+  <h1>Selection Page</h1>
+  
+  <div>
+    <input type="checkbox" name="item" value="Item 1"> Item 1<br>
+    <input type="checkbox" name="item" value="Item 2"> Item 2<br>
+    <input type="checkbox" name="item" value="Item 3"> Item 3<br>
+  </div>
+  
+  <button onclick="saveSelection()">Next</button>
+</body>
+</html>

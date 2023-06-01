@@ -25,11 +25,11 @@
     <table id="itemTable" class="table">
         <thead>
             <tr>
-                <!--<th class="icon-cell"></th>
+                <th class="icon-cell"></th>
                 <th>Item Code</th>
                 <th>Tag</th>
                 <th>Description</th>
-                <th>Price</th> -->
+                <th>Price</th>
             </tr>
         </thead>
         <tbody>
@@ -62,10 +62,6 @@
                             <td>${tag}</td>
                             <td>${description}</td>
                             <td>${prices[0]}</td>
-                            <td>${prices[1]}</td>
-                            <td>${prices[2]}</td>
-                            <td>${prices[3]}</td>
-                            <td>${prices[4]}</td>
                         `;
 
                         const tickCell = document.createElement('td');
@@ -73,14 +69,9 @@
                         tickCheckbox.type = 'checkbox';
                         tickCheckbox.addEventListener('change', function() {
                             if (tickCheckbox.checked) {
-                                selectedItems.push({
-                                    itemCode: itemCode,
-                                    tag: tag,
-                                    description: description,
-                                    prices: prices
-                                });
+                                selectedItems.push(itemCode);
                             } else {
-                                const index = selectedItems.findIndex(item => item.itemCode === itemCode);
+                                const index = selectedItems.indexOf(itemCode);
                                 if (index !== -1) {
                                     selectedItems.splice(index, 1);
                                 }
@@ -114,13 +105,15 @@
         });
 
         function openNewPage(selectedItems) {
-            // Serialize the selectedItems array and pass it to the new page
-            const serializedItems = JSON.stringify(selectedItems);
-            sessionStorage.setItem('selectedItems', serializedItems);
+            // Store the selectedItems array in sessionStorage
+            sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
 
             // Open the new page in a new window/tab
             window.open('newPage.html', '_blank');
+                  // Redirect to the next page
+      window.location.href = 'page2.html';
         }
     </script>
+      <button onclick="saveSelection()">Next</button>
 </body>
 </html>
