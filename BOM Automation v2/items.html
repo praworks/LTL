@@ -5,12 +5,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .icon-cell {
-            width: 30px;
+            width: 10px;
         }
 
         .icon-img {
-            width: 100%;
+            width: 80%;
             height: auto;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .highlighted {
+            background-color: #c1e7f4;
+        }
+
+        .checkbox-cell {
+            width: 20px;
+        }
+
+        .status-cell {
+            width: 1px;
         }
     </style>
 </head>
@@ -25,11 +52,17 @@
     <table id="itemTable" class="table">
         <thead>
             <tr>
-                <th class="icon-cell"></th>
+                <th class="icon-cell">checkbox</th>
+                <th class="status-cell">Icon</th>
+                <th>Selected</th>
                 <th>Item Code</th>
                 <th>Tag</th>
                 <th>Description</th>
-                <th>Price</th>
+                <th>Ex. Works Price</th>
+                <th>CIF</th>
+                <th>Duty Free</th>
+                <th>Duty Paid</th>
+                <th>Export</th>
             </tr>
         </thead>
         <tbody>
@@ -37,7 +70,6 @@
     </table>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="items.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             fetch('items.csv')
@@ -49,34 +81,49 @@
 
                     lines.forEach(line => {
                         const data = line.split(',');
-                        const itemCode = data[0];
-                        const tag = data[1];
-                        const description = data[2];
-                        const prices = data.slice(3);
+                        const itemCode = data[1];
+                        const tag = data[2];
+                        const description = data[3];
+                        const exWorksPrice = data[4];
+                        const cif = data[5];
+                        const dutyFree = data[6];
+                        const dutyPaid = data[7];
+                        const exportPrice = data[8];
                         const iconPath = `Icons/${itemCode}.jpg`;
 
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td class="icon-cell"><img class="icon-img" src="${iconPath}" alt="Icon"></td>
+                            <td class="status-cell"></td>
                             <td>${itemCode}</td>
                             <td>${tag}</td>
                             <td>${description}</td>
-                            <td>${prices[0]}</td>
+                            <td>${exWorksPrice}</td>
+                            <td>${cif}</td>
+                            <td>${dutyFree}</td>
+                            <td>${dutyPaid}</td>
+                            <td>${exportPrice}</td>
                         `;
 
                         const tickCell = document.createElement('td');
                         const tickCheckbox = document.createElement('input');
                         tickCheckbox.type = 'checkbox';
                         tickCheckbox.addEventListener('change', function() {
+                            const statusCell = row.querySelector('.status-cell');
+                            statusCell.textContent = tickCheckbox.checked ? 'Yes' : 'No';
+
                             if (tickCheckbox.checked) {
                                 selectedItems.push(itemCode);
+                                row.classList.add('highlighted');
                             } else {
                                 const index = selectedItems.indexOf(itemCode);
                                 if (index !== -1) {
                                     selectedItems.splice(index, 1);
                                 }
+                                row.classList.remove('highlighted');
                             }
                         });
+                        tickCell.classList.add('checkbox-cell');
                         tickCell.appendChild(tickCheckbox);
                         row.insertBefore(tickCell, row.firstChild);
 
@@ -97,23 +144,20 @@
                         checkboxes.forEach(checkbox => {
                             checkbox.checked = false; // Uncheck all checkboxes
                         });
+                        const statusCells = document.querySelectorAll('#itemTable tbody .status-cell');
+                        statusCells.forEach(cell => {
+                            cell.textContent = '';
+                        });
+                        const rows = document.querySelectorAll('#itemTable tbody tr');
+                        rows.forEach(row => {
+                            row.classList.remove('highlighted');
+                        });
                     });
                 })
                 .catch(error => {
                     console.error('Error fetching the CSV file:', error);
                 });
         });
-
-        function openNewPage(selectedItems) {
-            // Store the selectedItems array in sessionStorage
-            sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
-
-            // Open the new page in a new window/tab
-            window.open('newPage.html', '_blank');
-                  // Redirect to the next page
-      
-        }
     </script>
-      <button onclick="saveSelection()">Next</button>
 </body>
 </html>
