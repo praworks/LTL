@@ -1,29 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Display Page</title>
+    <title>Item Table View</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .icon-cell {
+            width: 30px;
+        }
+
+        .icon-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-  <h1>Display Page</h1>
-  
-  <h2>Selected Items:</h2>
-  <ul id="selected-items"></ul>
+    <nav>
+        <a href="designExtract.html" class="btn btn-primary">Insert Design</a>
+        <a href="newPage.html" class="btn btn-primary" id="viewBOMButton">View BOM</a>
+        <button id="resetButton" class="btn btn-secondary">Reset</button>
+    </nav>
+    <br>
+    <h1>Item Table View</h1>
+    <table id="itemTable" class="table">
+        <thead>
+            <tr>
+                <th class="icon-cell"></th>
+                <th>Item Code</th>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
-  <script>
-    // Retrieve the selected items from sessionStorage
-    var selectedItems = sessionStorage.getItem('selectedItems');
-    
-    if (selectedItems) {
-      selectedItems = JSON.parse(selectedItems);
-      var selectedItemsList = document.getElementById('selected-items');
-      
-      // Display the selected items
-      selectedItems.forEach(function(item) {
-        var listItem = document.createElement('li');
-        listItem.textContent = item;
-        selectedItemsList.appendChild(listItem);
-      });
-    }
-  </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="items.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('items.csv')
+                .then(response => response.text())
+                .then(csvData => {
+                    const lines = csvData.split(/\r?\n/);
+                    const tableBody = document.querySelector('#itemTable tbody');
+                    const selectedItems = [];
+
+                    lines.forEach(line => {
+                        const data = line.split(',');
+                        const itemCode = data[0];
+                        const tag = data[1];
+                        const description = data[2];
+                        const prices = data.slice(3);
+                        const iconPath = `Icons/${itemCode}.jpg`;
+
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td class="icon-cell"><img class="icon-img" src="${iconPath}" alt="Icon"></td>
+                            <td>${itemCode}</td>
+                            <td>${tag}</td>
+                            <td>${description}</td>
+                            <td>${prices[0]}</td>
+                        `;
+
+                        const tickCell = document.createElement('td');
+                        const tickCheckbox = document.createElement('input');
+                        tickCheckbox.type = 'checkbox';
+                        tickCheckbox.addEventListener('change', function() {
+                            if (tickCheckbox.checked) {
+                                selectedItems.push(itemCode);
+                            } else {
+                                const index = selectedItems.indexOf(itemCode);
+                                if (index !== -1) {
+                                    selectedItems.splice(index, 1);
+                                }
+                            }
+                        });
+                        tickCell.appendChild(tickCheckbox);
+                        row.insertBefore(tickCell, row.firstChild);
+
+                        tableBody.appendChild(row);
+                    });
+
+                    // Handle selected items and navigate to new page
+                    const viewBOMButton = document.querySelector('#viewBOMButton');
+                    viewBOMButton.addEventListener('click', function() {
+                        openNewPage(selectedItems);
+                    });
+
+                    // Handle reset button
+                    const resetButton = document.querySelector('#resetButton');
+                    resetButton.addEventListener('click', function() {
+                        selectedItems.length = 0; // Clear the selected items array
+                        const checkboxes = document.querySelectorAll('#itemTable tbody input[type="checkbox"]');
+                        checkboxes.forEach(checkbox => {
+                            checkbox.checked = false; // Uncheck all checkboxes
+                        });
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching the CSV file:', error);
+                });
+        });
+
+        function openNewPage(selectedItems) {
+            // Serialize the selectedItems array and pass it to the new page
+            const serializedItems = JSON.stringify(selectedItems);
+            sessionStorage.setItem('selectedItems', serializedItems);
+
+            // Open the new page in a new window/tab
+            window.open('newPage.html', '_blank');
+        }
+    </script>
 </body>
 </html>
