@@ -6,7 +6,8 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="btn btn-primary">Back to main menu</a>
+        <a href="items.html" class="btn btn-primary">Back previous page</a>
+        <button id="saveExcel" class="btn btn-secondary">Download as Excel</button>
         <button id="resetButton" class="btn btn-secondary">Reset</button>
     </nav>
     <br>
@@ -35,15 +36,10 @@
                 selectedItems.forEach(item => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
-                            <td class="icon-cell"><img class="icon-img" src="${iconPath}" alt="Icon"></td>
-                            <td>${itemCode}</td>
-                            <td>${tag}</td>
-                            <td>${description}</td>
-                            <td>${prices[0]}</td>
-                            <td>${prices[1]}</td>
-                            <td>${prices[2]}</td>
-                            <td>${prices[3]}</td>
-                            <td>${prices[4]}</td>
+                        <td>${item.itemCode}</td>
+                        <td>${item.tag}</td>
+                        <td>${item.description}</td>
+                        <td>${item.prices[0]}</td>
                     `;
 
                     tableBody.appendChild(row);
