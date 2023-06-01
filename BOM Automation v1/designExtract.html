@@ -43,7 +43,6 @@
 
                 <button onclick="extract()" class="btn btn-primary">Extract Values</button><br><br>
                 <button onclick="sortValues()" class="btn btn-info">Sort Alphabetically</button><br><br>
-                <button onclick="copyResults()" class="btn btn-secondary">Copy All Results</button><br><br>
             </div>
             <div class="md-6">
                 <table id="output">
@@ -58,7 +57,6 @@
 
     <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-
 
     <script>
         // get the current date and time
@@ -181,16 +179,6 @@
 
             // Replace the existing tbody with the new sorted tbody
             table.replaceChild(newTbody, tbody);
-        }
-
-        function copyResults() {
-            var table = document.getElementById("output");
-            var range = document.createRange();
-            range.selectNode(table);
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-            document.execCommand("copy");
-            window.getSelection().removeAllRanges();
         }
 
     </script>
