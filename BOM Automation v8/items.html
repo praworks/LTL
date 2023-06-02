@@ -57,7 +57,7 @@
                             checkbox.className = 'row-checkbox'; // Add a class name to the checkbox
                             checkbox.addEventListener('change', function() {
                                 toggleRowValue(row, checkbox.checked);
-                                row.classList.toggle('selected', checkbox.checked);
+                                //row.classList.toggle('selected', checkbox.checked);
                             });
                             cell.appendChild(checkbox);
                         } else {
@@ -82,7 +82,8 @@
                 // Function to toggle row value
                 function toggleRowValue(row, isChecked) {
                     const valueCell = row.querySelector('td:nth-child(3)'); // Assuming the value cell is the second cell (index 1)
-                    valueCell.textContent = isChecked ? 'true' : 'false';
+                    valueCell.textContent = isChecked ? 'yes' : 'no';
+                    row.classList.toggle('selected', isChecked.yes);
                 }
             });
     </script>
