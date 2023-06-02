@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CSV to HTML Table</title>
+  <title>Update Data Table</title>
   <style>
     table {
       border-collapse: collapse;
-      width: 100%;
     }
     th, td {
-      border: 1px solid black;
       padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
+      border: 1px solid black;
     }
   </style>
 </head>
 <body>
-  <table id="csvTable"></table>
+  <h2>Data Table</h2>
+  <table id="data-table">
+    <!-- The table will be populated dynamically by JavaScript -->
+  </table>
 
   <script>
-    const csvUrl = "https://praworks.github.io/LTL/BOM%20Automation%20v6/items.csv";
-
-    // Fetch the CSV file
-    fetch(csvUrl)
-      .then(response => response.text())
-      .then(csvData => {
-        const table = document.getElementById("csvTable");
-
-        // Split CSV data into rows
-        const rows = csvData.split(/\r?\n/);
-
-        // Iterate over rows
-        rows.forEach(rowData => {
-          const row = document.createElement("tr");
-
-          // Split row data into cells
-          const cells = rowData.split(",");
-
-          // Iterate over cells
-          cells.forEach(cellData => {
-            const cell = document.createElement("td");
-            cell.textContent = cellData;
-            row.appendChild(cell);
-          });
-
-          table.appendChild(row);
+    // Function to fetch the CSV data
+    function fetchData() {
+      fetch('https://praworks.github.io/LTL/BOM%20Automation%20v6/items.csv')
+        .then(response => response.text())
+        .then(data => {
+          const table = document.getElementById('data-table');
+          const rows = data.trim().split('\n');
+          
+          // Create table headers
+          const headers = rows[0].split(',');
+          let tableHTML = '<tr>';
+          for (let header of headers) {
+            tableHTML += `<th>${header}</th>`;
+          }
+          tableHTML += '</tr>';
+          
+          // Create table rows
+          for (let i = 1; i < rows.length; i++) {
+            const values = rows[i].split(',');
+            tableHTML += '<tr>';
+            for (let value of values) {
+              tableHTML += `<td contenteditable>${value}</td>`;
+            }
+            tableHTML += '</tr>';
+          }
+          
+          // Populate the table
+          table.innerHTML = tableHTML;
+        })
+        .catch(error => {
+          console.log('An error occurred:', error);
         });
-      })
-      .catch(error => {
-        console.log("Error fetching CSV:", error);
-      });
+    }
+    
+    // Call the fetchData function when the page loads
+    window.onload = fetchData;
   </script>
 </body>
 </html>
