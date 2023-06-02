@@ -20,13 +20,18 @@
         }
 
         tr.highlightBlue {
-            background-color: lightblue;
+            background-color: lig;
             /* Change the background color for highlighted rows */
         }
 
         tr.highlightYellow {
-            background-color: lightyellow;
+            background-color: lightsalmon;
             /* Change the background color for highlighted rows */
+        }
+
+                        /* Remove the icon styles */
+        .header-icon {
+            display: none;
         }
 
         .icon {
@@ -38,6 +43,8 @@
             transition: width 0.3s ease;
             /* Add transition effect */
         }
+
+
     </style>
 </head>
 
@@ -75,32 +82,14 @@
                             });
                             cell.appendChild(checkbox);
                         } else {
-                            const value = rowData[j];
-                            const isEditable = j === 6; // Make the third cell (index 2) editable
-                            if (isEditable) {
-                                const input = document.createElement('input');
-                                input.type = 'text';
-                                input.value = value;
-                                input.style.width = '100%';
-                                input.addEventListener('blur', function () {
-                                    updateCellValue(row, input.value);
-                                });
-                                input.addEventListener('keydown', function (event) {
-                                    if (event.key === 'Enter') {
-                                        updateCellValue(row, input.value);
-                                    }
-                                });
-                                cell.appendChild(input);
-                            } else {
-                                cell.textContent = value;
-                                if (j === 1) {
-                                    const icon = document.createElement('img');
-                                    icon.src = `icons/${rowData[j + 2]}.jpg`;
-                                    icon.className = 'icon';
-                                    cell.appendChild(icon);
-                                } else if (j === 2 && rowData[j] === 'yes') {
-                                    row.classList.add('highlightBlue');
-                                }
+                            cell.textContent = rowData[j];
+                            if (j === 1) {
+                                const icon = document.createElement('img');
+                                icon.src = `icons/${rowData[j+2]}.jpg`;
+                                icon.className = 'icon';
+                                cell.appendChild(icon);
+                            } else if (j === 2 && rowData[j] === 'yes') {
+                                row.classList.add('highlightBlue');
                             }
                         }
 
@@ -115,12 +104,6 @@
                     const valueCell = row.querySelector('td:nth-child(3)'); // Assuming the value cell is the third cell (index 2)
                     valueCell.textContent = isChecked ? 'yes' : 'no';
                     row.classList.toggle('highlightYellow', isChecked);
-                }
-
-                // Function to update cell value
-                function updateCellValue(row, newValue) {
-                    const valueCell = row.querySelector('td:nth-child(3)'); // Assuming the value cell is the third cell (index 2)
-                    valueCell.textContent = newValue;
                 }
             });
     </script>
