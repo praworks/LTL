@@ -93,7 +93,11 @@
             
             // Add the remaining columns
             for (var j = 0; j < cells.length; j++) {
-              tableHTML += '<td>' + cells[j] + '</td>';
+              if (j === 4) { // Assuming Quantity is in the third column (index 2)
+                tableHTML += '<td><input type="text" value="' + cells[j] + '" onchange="updateCellValue(this)"></td>';
+              } else {
+                tableHTML += '<td>' + cells[j] + '</td>';
+              }
             }
             
             tableHTML += '</tr>';
@@ -115,6 +119,13 @@
       } else {
         row.classList.remove('selected');
       }
+    }
+    
+    // Function to update the cell value when it changes
+    function updateCellValue(input) {
+      var newValue = input.value;
+      var cell = input.parentNode;
+      cell.innerText = newValue;
     }
     
     // Function to display selected items in a new table
