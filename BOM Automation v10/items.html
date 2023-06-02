@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CSV to HTML Table</title>
     <style>
@@ -8,7 +9,8 @@
             width: 100%;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid black;
             padding: 8px;
         }
@@ -17,15 +19,28 @@
             background-color: #f2f2f2;
         }
 
-        tr:nth-child(even) {
-            background-color: #dddddd;
+        tr.highlightBlue {
+            background-color: lig;
+            /* Change the background color for highlighted rows */
         }
 
-        tr.selected {
-            background-color: yellow; /* Change the background color for selected rows */
+        tr.highlightYellow {
+            background-color: lightsalmon;
+            /* Change the background color for highlighted rows */
+        }
+
+        .icon {
+            display: block;
+            width: 25px;
+            height: auto;
+            margin: 0 auto;
+            /* Center the icons horizontally */
+            transition: width 0.3s ease;
+            /* Add transition effect */
         }
     </style>
 </head>
+
 <body>
     <table id="csvTable"></table>
 
@@ -47,21 +62,28 @@
                             const checkbox = document.createElement('input');
                             checkbox.type = 'checkbox';
                             checkbox.className = 'row-checkbox'; // Add a class name to the checkbox
-                            checkbox.addEventListener('change', function() {
-                                toggleRowSelection(row, checkbox.checked);
+                            checkbox.addEventListener('change', function () {
+                                toggleRowValue(row, checkbox.checked);
                             });
                             cell.appendChild(checkbox);
                         } else if (j === 0) {
                             const checkbox = document.createElement('input');
                             checkbox.type = 'checkbox';
                             checkbox.className = 'row-checkbox'; // Add a class name to the checkbox
-                            checkbox.addEventListener('change', function() {
+                            checkbox.addEventListener('change', function () {
                                 toggleRowValue(row, checkbox.checked);
-                                row.classList.toggle('selected', checkbox.checked);
                             });
                             cell.appendChild(checkbox);
                         } else {
                             cell.textContent = rowData[j];
+                            if (j === 1) {
+                                const icon = document.createElement('img');
+                                icon.src = `icons/${rowData[j+2]}.jpg`;
+                                icon.className = 'icon';
+                                cell.appendChild(icon);
+                            } else if (j === 2 && rowData[j] === 'yes') {
+                                row.classList.add('highlightBlue');
+                            }
                         }
 
                         row.appendChild(cell);
@@ -70,21 +92,14 @@
                     table.appendChild(row);
                 }
 
-                // Function to toggle row selection
-                function toggleRowSelection(row, isSelected) {
-                    const checkboxes = row.querySelectorAll('.row-checkbox');
-                    checkboxes.forEach(function(checkbox) {
-                        checkbox.checked = isSelected;
-                        row.classList.toggle('selected', isSelected);
-                    });
-                }
-
                 // Function to toggle row value
                 function toggleRowValue(row, isChecked) {
-                    const valueCell = row.querySelector('td:nth-child(3)'); // Assuming the value cell is the second cell (index 1)
-                    valueCell.textContent = isChecked ? 'true' : 'false';
+                    const valueCell = row.querySelector('td:nth-child(3)'); // Assuming the value cell is the third cell (index 2)
+                    valueCell.textContent = isChecked ? 'yes' : 'no';
+                    row.classList.toggle('highlightYellow', isChecked);
                 }
             });
     </script>
 </body>
+
 </html>

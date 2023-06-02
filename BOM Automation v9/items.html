@@ -21,8 +21,12 @@
             background-color: #dddddd;
         }
 
-        tr.selected {
-            background-color: yellow; /* Change the background color for selected rows */
+        tr.highlightBlue {
+            background-color: lightblue; /* Change the background color for highlighted rows */
+        }
+
+        tr.highlightYellow {
+            background-color: lightyellow; /* Change the background color for highlighted rows */
         }
     </style>
 </head>
@@ -48,7 +52,7 @@
                             checkbox.type = 'checkbox';
                             checkbox.className = 'row-checkbox'; // Add a class name to the checkbox
                             checkbox.addEventListener('change', function() {
-                                toggleRowSelection(row, checkbox.checked);
+                                toggleRowValue(row, checkbox.checked);
                             });
                             cell.appendChild(checkbox);
                         } else if (j === 0) {
@@ -57,11 +61,13 @@
                             checkbox.className = 'row-checkbox'; // Add a class name to the checkbox
                             checkbox.addEventListener('change', function() {
                                 toggleRowValue(row, checkbox.checked);
-                                row.classList.toggle('selected', checkbox.checked);
                             });
                             cell.appendChild(checkbox);
                         } else {
                             cell.textContent = rowData[j];
+                            if (j === 2 && rowData[j] === 'yes') {
+                                row.classList.add('highlightBlue');
+                            }
                         }
 
                         row.appendChild(cell);
@@ -70,19 +76,11 @@
                     table.appendChild(row);
                 }
 
-                // Function to toggle row selection
-                function toggleRowSelection(row, isSelected) {
-                    const checkboxes = row.querySelectorAll('.row-checkbox');
-                    checkboxes.forEach(function(checkbox) {
-                        checkbox.checked = isSelected;
-                        row.classList.toggle('selected', isSelected);
-                    });
-                }
-
                 // Function to toggle row value
                 function toggleRowValue(row, isChecked) {
-                    const valueCell = row.querySelector('td:nth-child(3)'); // Assuming the value cell is the second cell (index 1)
-                    valueCell.textContent = isChecked ? 'true' : 'false';
+                    const valueCell = row.querySelector('td:nth-child(3)'); // Assuming the value cell is the third cell (index 2)
+                    valueCell.textContent = isChecked ? 'yes' : 'no';
+                    row.classList.toggle('highlightYellow', isChecked);
                 }
             });
     </script>
