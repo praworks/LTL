@@ -62,7 +62,7 @@
     // Function to fetch the CSV file and generate the table
     function generateTable() {
       var csvFile = 'https://praworks.github.io/LTL/BOM%20Automation%20v6/items.csv';  // Replace with your CSV file URL
-      
+
       // Fetch the CSV file
       fetch(csvFile)
         .then(function(response) {
@@ -72,12 +72,12 @@
           // Parse CSV data
           var rows = csvData.split('\n');
           var tableHTML = '<table>';
-          
+
           // Generate the table rows
           for (var i = 0; i < rows.length; i++) {
             var cells = rows[i].split(',');
             tableHTML += '<tr>';
-            
+
             // Add the checkbox column
             var checkboxHtml = '<input type="checkbox" onclick="toggleSelected(this)"';
             if (cells[3].toLowerCase() === 'yes') {
@@ -86,11 +86,11 @@
             } else {
               tableHTML += '<td>' + checkboxHtml + '</td>';
             }
-            
+
             // Add the icon column
             var iconPath = 'icons/' + cells[1] + '.jpg';  // Assuming item code is in the second column
             tableHTML += '<td><img class="item-icon" src="' + iconPath + '"></td>';
-            
+
             // Add the remaining columns
             for (var j = 0; j < cells.length; j++) {
               if (j === 4) { // Assuming Quantity is in the third column (index 2)
@@ -98,37 +98,45 @@
               } else {
                 tableHTML += '<td>' + cells[j] + '</td>';
               }
-              
             }
-            
+
             tableHTML += '</tr>';
           }
-          
+
           tableHTML += '</table>';
-          
+
           // Append the table to the "table-container" div
           document.getElementById('table-container').innerHTML = tableHTML;
+
+          // Add 'selected' class to rows with 'Selected?' value as 'yes'
+          var tableRows = document.getElementsByTagName('tr');
+          for (var k = 1; k < tableRows.length; k++) { // Start from index 1 to skip the table header row
+            var rowCells = tableRows[k].getElementsByTagName('td');
+            if (rowCells[0].querySelector('input[type="checkbox"]').checked) {
+              tableRows[k].classList.add('selected');
+            }
+          }
         });
     }
-    
+
     // Function to toggle the selected state and highlight the row
     function toggleSelected(checkbox) {
       var row = checkbox.parentNode.parentNode;
-      
+
       if (checkbox.checked) {
         row.classList.add('selected');
       } else {
         row.classList.remove('selected');
       }
     }
-    
+
     // Function to update the cell value when it changes
     function updateCellValue(input) {
       var newValue = input.value;
       var cell = input.parentNode;
       cell.innerText = newValue;
     }
-    
+
     // Function to display selected items in a new table
     function showSelectedItems() {
       // Get all selected checkboxes
@@ -202,20 +210,20 @@
       link.click();
       document.body.removeChild(link);
     }
-    
+
     // Generate the table on page load
     window.addEventListener('load', generateTable);
   </script>
 </head>
 <body>
   <h1>Items Table</h1>
-  
+
   <!-- Button to show selected items -->
   <button onclick="showSelectedItems()">Show Selected Items</button>
-  
+
   <!-- Button to download selected items as CSV -->
   <button onclick="downloadSelectedItems()">Download Selected Items</button>
-  
+
   <!-- Container for the table -->
   <div id="table-container"></div>
 </body>

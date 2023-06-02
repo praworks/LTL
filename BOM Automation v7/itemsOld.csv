@@ -1,5 +1,5 @@
 ﻿Selected?,Item code,Tag,Description,Quantity kg/l/nos,Ex. Works Price,CIF,Duty Free,Duty Paid,Export
-yes,OLBK0002,Oil,Inhibited Mineral Oil,750,100,100,100,100,100
+yes,OLBK0002,Oil,Inhibited Mineral Oil,,100,100,100,100,100
 no,OLBK0001,Oil,Unhibited Mineral Oil,,100,100,100,100,100
 yes,ACIN0013,LV Foil,215 x 0.19,,100,100,100,100,100
 no,ACIN0014,LV Foil,240 x 0.27,,100,100,100,100,100
