@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSV to HTML Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <table id="csvTable"></table>
+
+  <script>
+    const csvUrl = "https://praworks.github.io/LTL/BOM%20Automation%20v6/items.csv";
+
+    // Fetch the CSV file
+    fetch(csvUrl)
+      .then(response => response.text())
+      .then(csvData => {
+        const table = document.getElementById("csvTable");
+
+        // Split CSV data into rows
+        const rows = csvData.split(/\r?\n/);
+
+        // Iterate over rows
+        rows.forEach(rowData => {
+          const row = document.createElement("tr");
+
+          // Split row data into cells
+          const cells = rowData.split(",");
+
+          // Iterate over cells
+          cells.forEach(cellData => {
+            const cell = document.createElement("td");
+            cell.textContent = cellData;
+            row.appendChild(cell);
+          });
+
+          table.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.log("Error fetching CSV:", error);
+      });
+  </script>
+</body>
+</html>

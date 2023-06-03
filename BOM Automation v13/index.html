@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOM</title>
+    <style>
+        .container {
+            text-align: center;
+            padding-top: 15%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 50px;
+            font-size: 40px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-new {
+            background-color: black;
+        }
+
+        .btn-old {
+            background-color: goldenrod;
+        }
+    </style>
+    <script>
+        function openLinkNew() {
+            window.open('items.html', '_blank');
+        }
+        
+        function openLinkOld() {
+            // Create an input element of type "file"
+            var fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            
+            // Listen for changes in the file input
+            fileInput.addEventListener('change', function(event) {
+                var file = event.target.files[0];
+                // Process the uploaded file here
+                
+                // Optional: Display a confirmation message
+                alert('File uploaded: ' + file.name);
+            });
+            
+            // Trigger the file input dialog
+            fileInput.click();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Select</h1>
+        <button class="btn btn-old" onclick="openLinkPrice()">View prices</button>
+        <button class="btn btn-new" onclick="openLinkNew()">Start New</button>
+        <button class="btn btn-old" onclick="openLinkOld()">I have a BOM</button>
+    </div>
+</body>
+</html>

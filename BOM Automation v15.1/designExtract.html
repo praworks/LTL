@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extract design sheet as table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="items.html" class="btn btn-primary">Back previous page</a>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="md-6">
+                <h1>Extract design sheet as table</h1>
+                <input type="file" id="fileInput" class="form-control"><br>
+                <textarea id="input" rows="5" column="50" placeholder="Or paste design here"
+                    class="form-control"></textarea><br>
+
+                <button onclick="extract()" class="btn btn-primary">Extract Values</button><br><br>
+                <button onclick="sortValues()" class="btn btn-info">Sort Alphabetically</button><br><br>
+            </div>
+            <div class="md-6">
+                <table id="output">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <script>
+        // get the current date and time
+        let currentDate = new Date();
+
+        // format the date and time as a string in YYYYMMDD HHMMSS format
+        let dateTimeString = currentDate.toLocaleString('sv-SE', {
+            timeZone: 'Asia/Kolkata',
+            hour12: false,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        }).replace(/[:\s-]/g, '');
+
+        // append the date and time to the file name
+        let fileName = "Design " + dateTimeString + ".xlsx";
+
+        var data = [];
+
+        function extract() {
+            // Get the input text
+            var input = document.getElementById("input").value;
+
+            // Split the input text into lines
+            var lines = input.split(/\s*\|\s*|\s*\n\s*/);
+
+            // Clear the output table and data array
+            var outputTable = document.getElementById("output");
+            outputTable.innerHTML = "";
+            data = [];
+
+            // Create table header
+            var headerRow = outputTable.insertRow();
+            headerRow.insertCell().innerHTML = "<b>Field</b>";
+            headerRow.insertCell().innerHTML = "<b>Value</b>";
+            for (var j = 1; j <= 30; j++) {
+                headerRow.insertCell().innerHTML = "<b>Value-" + j + "</b>";
+            }
+
+            // Loop through the lines
+            for (var i = 0; i < lines.length; i++) {
+                // Find the index of the ":" or "KVA" character
+                var colonIndex = lines[i].indexOf(":");
+                var kvaIndex = lines[i].toLowerCase().indexOf("kva");
+
+                // If there is a ":" or "KVA" character, extract the values before and after it
+                if (colonIndex >= 0 || kvaIndex >= 0) {
+                    var splitIndex = kvaIndex >= 0 ? kvaIndex + 3 : colonIndex;
+                    var beforeSplit = lines[i].substring(0, splitIndex).trim();
+                    var afterSplit = lines[i].substring(splitIndex + 0).trim();
+
+                    // Split the "value" by delimiter and space
+                    // var values = afterSplit.split(/[\/\s,^-]+/);
+                    var values = afterSplit.split(/[\/\s,^-x]+/); // added x
+                    var values = afterSplit.split(/[\/\s,^x]+|-/); // added -
+                    var values = afterSplit.split(/[\/\s,:^x-]+|-/); // added :
+                    var values = afterSplit.split(/[\/\s,#:x^\-]+|-/); // added #
+
+                    // Add the extracted values to the output table and data array
+                    var row = outputTable.insertRow();
+                    row.insertCell().innerHTML = beforeSplit;
+                    row.insertCell().innerHTML = values[0];
+                    for (var k = 1; k <= 30; k++) {
+                        var value = "";
+                        if (k < values.length) {
+                            value = values[k];
+                        }
+                        row.insertCell().innerHTML = value;
+                    }
+                    data.push([beforeSplit, values.join(",")]);
+                }
+            }
+        }
+
+        function handleFileSelect(evt) {
+            var file = evt.target.files[0];
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById("input").value = e.target.result;
+            };
+            reader.readAsText(file);
+        }
+
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+
+        function sortValues() {
+            // Get the table and tbody elements
+            var table = document.getElementById("output");
+            var tbody = table.querySelector("tbody");
+
+            // Get the rows from the tbody excluding the first (header) row
+            var rows = Array.from(tbody.querySelectorAll("tr:not(:first-child)"));
+
+            // Sort the rows by the text content of the first cell (Field)
+            rows.sort(function (a, b) {
+                var aText = a.querySelector("td:first-child").textContent.toLowerCase();
+                var bText = b.querySelector("td:first-child").textContent.toLowerCase();
+                if (aText < bText) {
+                    return -1;
+                } else if (aText > bText) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            });
+
+            // Create a new tbody to hold the sorted rows
+            var newTbody = document.createElement("tbody");
+
+            // Add the header row to the new tbody
+            newTbody.appendChild(table.rows[0]);
+
+            // Add the sorted rows to the new tbody
+            rows.forEach(function (row) {
+                newTbody.appendChild(row);
+            });
+
+            // Replace the existing tbody with the new sorted tbody
+            table.replaceChild(newTbody, tbody);
+        }
+
+    </script>
+</body>
+
+</html>
