@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOM</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+    <script>
+        // Function to fetch CSV data and generate HTML table
+        function fetchCSVAndGenerateTable() {
+            fetch('https://praworks.github.io/LTL/BOM%20Automation%20v6/items.csv')
+                .then(response => response.text())
+                .then(csvData => {
+                    const rows = csvData.split('\n');
+                    const table = document.getElementById('myTable');
+
+                    // Generate table headers
+                    const headers = rows[0].split(',');
+                    let headerRow = '<tr>';
+                    headers.forEach(header => {
+                        headerRow += `<th>${header}</th>`;
+                    });
+                    headerRow += '</tr>';
+                    table.innerHTML += headerRow;
+
+                    // Generate table rows
+                    for (let i = 1; i < rows.length; i++) {
+                        const rowCells = rows[i].split(',');
+                        let row = '<tr>';
+                        rowCells.forEach(cell => {
+                            row += `<td contenteditable>${cell}</td>`;
+                        });
+                        row += '</tr>';
+                        table.innerHTML += row;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching CSV data:', error);
+                });
+        }
+
+        // Call the function to fetch CSV data and generate the table
+        fetchCSVAndGenerateTable();
+    </script>
+</head>
+<body>
+    <h3 align="Center">Editable Table</h3>
+    <table id="myTable"></table>
+</body>
+</html>
