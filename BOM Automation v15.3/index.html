@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>BOM</title>
     <style>
@@ -25,33 +26,38 @@
         }
 
         .btn-old {
-            background-color: goldenrod;
+            background-color: lightseagreen;
         }
     </style>
     <script>
         function openLinkNew() {
             window.open('items.html', '_blank');
         }
-        
+
+        function openLinkPrice() {
+            window.open('itemsRawData.html', '_blank');
+        }
+
         function openLinkOld() {
             // Create an input element of type "file"
             var fileInput = document.createElement('input');
             fileInput.type = 'file';
-            
+
             // Listen for changes in the file input
-            fileInput.addEventListener('change', function(event) {
+            fileInput.addEventListener('change', function (event) {
                 var file = event.target.files[0];
                 // Process the uploaded file here
-                
+
                 // Optional: Display a confirmation message
                 alert('File uploaded: ' + file.name);
             });
-            
+
             // Trigger the file input dialog
             fileInput.click();
         }
     </script>
 </head>
+
 <body>
     <div class="container">
         <h1>Select</h1>
@@ -60,4 +66,5 @@
         <button class="btn btn-old" onclick="openLinkOld()">I have a BOM</button>
     </div>
 </body>
+
 </html>
