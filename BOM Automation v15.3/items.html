@@ -15,7 +15,7 @@
     }
 
     .highlightYellow {
-      background-color: yellow;
+      background-color: lightgreen;
     }
 
     td input[type="checkbox"] {
@@ -103,7 +103,7 @@
 
     // Function to get the icon HTML based on the item code
     function getIconHTML(iconCode) {
-      return `<img src="icons/${iconCode}.jpg" alt="${iconCode}" width="28">`;
+      return `<img src="icons/${iconCode}.png" alt="${iconCode}" width="28">`;
     }
 
     // Function to filter the table based on the checkbox state
@@ -123,18 +123,45 @@
       }
     }
 
+    // Function to save table data as CSV file with Sri Lankan date and time
+    function saveTableAsCSV() {
+      const headers = Array.from(document.querySelectorAll("#myTable th")).map((header) => header.innerText);
+      const rows = Array.from(document.querySelectorAll("#myTable tbody tr")).map((row) =>
+        Array.from(row.querySelectorAll("td")).map((cell) => cell.innerText)
+      );
+      const csvContent = [headers.join(",")].concat(rows.map((row) => row.join(","))).join("\n");
+
+      const currentDate = new Date().toISOString().split("T")[0]; // Get current date in YYYY-MM-DD format
+      const currentTime = new Date().toLocaleTimeString("en-LK", { timeZone: "Asia/Colombo", hour12: false }); // Get current Sri Lankan time
+
+      const formattedDate = currentDate.replaceAll("/", "-"); // Format the date as YYYY-MM-DD
+      const formattedTime = currentTime.replace(/:/g, ""); // Format the time as HHmmss
+
+      const fileName = `table_${formattedDate}_${formattedTime}.csv`; // Construct the file name with Sri Lankan date and time
+      const downloadLink = document.createElement("a");
+      downloadLink.setAttribute("href", "data:text/csv;charset=utf-8," + encodeURIComponent(csvContent));
+      downloadLink.setAttribute("download", fileName);
+      downloadLink.style.display = "none";
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    }
+    
     // Call the function to fetch CSV data and generate the table
     fetchCSVAndGenerateTable();
   </script>
 </head>
 
 <body>
-  <h3 align="center">Editable Table</h3>
+  <h3 align="center">Once done with selection save as csv / Don't refresh / Editable Table</h3>
+  
   <div>
-    <label for="filterCheckbox">Show selected items only:</label>
-    <input type="checkbox" id="filterCheckbox" onchange="filterTable()">
+    <button onclick="saveTableAsCSV()" style="font-size: 18px; padding: 5px;">Save as CSV</button>
+    <label for="filterCheckbox" style="font-size: 18px; padding: 5px;">Show selected items only:</label>
+    <input style="font-size: 18px; padding: 5px;" type="checkbox" id="filterCheckbox" onchange="filterTable()">
   </div>
   <table id="myTable"></table>
+
 
   <script>
     // Show all items when the filter checkbox is unchecked
