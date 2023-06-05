@@ -1,361 +1,364 @@
 ﻿Checkbox,Icon,Selected,Item code,Tag,Description,Quantity kg/l/nos,Ex. Works Price,CIF,Duty Free,Duty Paid,Export
-,,yes,OLBK0002,Oil,Inhibited Mineral Oil,1,100,100,100,100,100
-,,no,OLBK0001,Oil,Unhibited Mineral Oil,1,100,100,100,100,100
-,,no,,LV Foil,215 x 0.19,1,100,100,100,100,100
-,,no,,LV Foil,240 x 0.27,1,100,100,100,100,100
-,,no,,LV Foil,275 x 0.40,1,100,100,100,100,100
-,,no,,LV Foil,275 x 0.27,1,100,100,100,100,100
-,,no,,LV Foil,280 x 0.25,1,100,100,100,100,100
-,,no,,LV Foil,280 x 0.27,1,100,100,100,100,100
-,,no,,LV Foil,280 x 0.4,1,100,100,100,100,100
-,,no,,LV Foil,320 x 0.40,1,100,100,100,100,100
-,,no,,LV Foil,330 x 0.55,1,100,100,100,100,100
-,,no,,LV Foil,370 x 0.50,1,100,100,100,100,100
-,,no,,LV Foil,405 x 0.75,1,100,100,100,100,100
-,,no,,LV Foil,410 x 0.70,1,100,100,100,100,100
-,,no,,LV Foil,425 x 0.85,1,100,100,100,100,100
-,,no,,LV Foil,530 x 0.80,1,100,100,100,100,100
-,,no,,LV Foil,540 x 0.90,1,100,100,100,100,100
-,,no,,LV Foil,540 x 0.9,1,100,100,100,100,100
-,,no,,LV Foil,540 x 1,1,100,100,100,100,100
-,,no,,LV Foil,565 x 0.90,1,100,100,100,100,100
-,,no,,LV Foil,630 x 0.45,1,100,100,100,100,100
-,,no,,LV Foil,630 x 0.45 x 2,1,100,100,100,100,100
-,,no,,LV Foil,630 x 0.95,1,100,100,100,100,100
-,,no,,LV Foil,650 x 0.5,1,100,100,100,100,100
-,,no,,LV Foil,650 x 0.50 x 2,1,100,100,100,100,100
-,,no,,LV Foil,650 x 1,1,100,100,100,100,100
-,,no,,LV Foil,675 x 0.9,1,100,100,100,100,100
-,,no,,LV Foil,685 x 0.6,1,100,100,100,100,100
-,,no,,LV Foil,685 x 0.60 x 2,1,100,100,100,100,100
-,,no,,LV Foil,755 x 0.7,1,100,100,100,100,100
-,,no,,LV Foil,755 x 0.70 x 2,1,100,100,100,100,100
-,,no,,LV Foil,760 x 0.8,1,100,100,100,100,100
-,,no,,LV Foil,760 x 0.80 x 2,1,100,100,100,100,100
-,,no,,LV Foil,760 x 0.95,1,100,100,100,100,100
-,,no,,LV Foil,800 x 1.35,1,100,100,100,100,100
-,,no,,LV Foil,800 x 1.35 x 2,1,100,100,100,100,100
-,,no,,Rec. Cu.,3.5 x 11.5,1,100,100,100,100,100
-,,no,,Rec. Cu.,3.5 x 17.5,1,100,100,100,100,100
-,,no,,Rec. Cu.,3.5 x 9.5,1,100,100,100,100,100
-,,no,,Rec. Cu.,4.5 x 10,1,100,100,100,100,100
-,,no,,BusBar,25 x 3,1,100,100,100,100,100
-,,no,,BusBar,38 x 4,1,100,100,100,100,100
-,,no,,BusBar,40 x 6,1,100,100,100,100,100
-,,no,,BusBar,50 x 6,1,100,100,100,100,100
-,,no,,BusBar,60 x 5,1,100,100,100,100,100
-,,no,,BusBar,60 x 8,1,100,100,100,100,100
-,,no,,BusBar,75 x 6,1,100,100,100,100,100
-,,no,,BusBar,80 x 8,1,100,100,100,100,100
-,,no,,BusBar,80 x 10,1,100,100,100,100,100
-,,no,,BusBar,100 x 10,1,100,100,100,100,100
-,,no,,BusBar,120 x 10,1,100,100,100,100,100
-,,no,,BusBar,120 x 12,1,100,100,100,100,100
-,,no,,DDP Double Layer,0.15,1,100,100,100,100,100
-,,no,,DDP Single Layer,0.15,1,100,100,100,100,100
-,,no,,DDP Single Layer,0.25,1,100,100,100,100,100
-,,no,,Edge Strip,0.25,1,100,100,100,100,100
-,,no,,LV Insulation Packet,50kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,100kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,160kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,200kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,250kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,315kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,500kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,630kVA ,1,100,100,100,100,100
-,,no,,LV Insulation Packet,800kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,1000kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,1250kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,1600kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,2000kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,2500kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,3150kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,4000kVA,1,100,100,100,100,100
-,,no,,LV Insulation Packet,5000kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,50kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,100kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,160kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,200kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,250kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,315kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,500kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,630kVA ,1,100,100,100,100,100
-,,no,,HV Insulation Packet,800kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,1000kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,1250kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,1600kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,2000kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,2500kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,3150kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,4000kVA,1,100,100,100,100,100
-,,no,,HV Insulation Packet,5000kVA,1,100,100,100,100,100
-,,no,,Copper Flexible,50/33/400,1,100,100,100,100,100
-,,no,,Copper Flexible,100/33/400  EU,1,100,100,100,100,100
-,,no,,Copper Flexible,160/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,250/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,400/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,630/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,800/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1000/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1250/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1600/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2000/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2500/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,3150/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,4000/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,5000/33/400 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,100/33/415 Ph2,1,100,100,100,100,100
-,,no,,Copper Flexible,160/33/415 Ph2,1,100,100,100,100,100
-,,no,,Copper Flexible,250/33/415 Ph2,1,100,100,100,100,100
-,,no,,Copper Flexible,400/33/415 Ph2,1,100,100,100,100,100
-,,no,,Copper Flexible,630/33/415 Ph2,1,100,100,100,100,100
-,,no,,Copper Flexible,800/33/415 Ph2,1,100,100,100,100,100
-,,no,,Copper Flexible,1000/33/415 Ph2,1,100,100,100,100,100
-,,no,,Copper Flexible,1000/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1250/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1600/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2000/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2500/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,3150/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,4000/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,5000/33/415 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1000/33/690 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1250/33/690 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1600/33/690 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2000/33/690 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2500/33/690 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,3150/33/690 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,4000/33/690 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1000/33/800 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1250/33/800 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,1600/33/800 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2000/33/800 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,2500/33/800 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,3150/33/800 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,4000/33/800 EU,1,100,100,100,100,100
-,,no,,Copper Flexible,5000/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,50/33/400,1,100,100,100,100,100
-,,no,,Timber Packet,100/33/400  EU,1,100,100,100,100,100
-,,no,,Timber Packet,160/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,250/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,400/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,630/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,800/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1000/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1250/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1600/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2000/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2500/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,3150/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,4000/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,5000/33/400 EU,1,100,100,100,100,100
-,,no,,Timber Packet,100/33/415 Ph2,1,100,100,100,100,100
-,,no,,Timber Packet,160/33/415 Ph2,1,100,100,100,100,100
-,,no,,Timber Packet,250/33/415 Ph2,1,100,100,100,100,100
-,,no,,Timber Packet,400/33/415 Ph2,1,100,100,100,100,100
-,,no,,Timber Packet,630/33/415 Ph2,1,100,100,100,100,100
-,,no,,Timber Packet,800/33/415 Ph2,1,100,100,100,100,100
-,,no,,Timber Packet,1000/33/415 Ph2,1,100,100,100,100,100
-,,no,,Timber Packet,1000/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1250/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1600/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2000/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2500/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,3150/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,4000/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,5000/33/415 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1000/33/690 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1250/33/690 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1600/33/690 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2000/33/690 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2500/33/690 EU,1,100,100,100,100,100
-,,no,,Timber Packet,3150/33/690 EU,1,100,100,100,100,100
-,,no,,Timber Packet,4000/33/690 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1000/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1250/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,1600/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2000/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,2500/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,3150/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,4000/33/800 EU,1,100,100,100,100,100
-,,no,,Timber Packet,5000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,50/33/400,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,100/33/400  EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,160/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,250/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,400/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,630/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,800/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1250/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1600/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2500/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,3150/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,4000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,5000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,100/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,160/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,250/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,400/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,630/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,800/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1000/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1250/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1600/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2500/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,3150/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,4000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,5000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1000/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1250/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1600/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2000/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2500/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,3150/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,4000/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1250/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,1600/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,2500/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,3150/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,4000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Insulation Packet,5000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),50/33/400,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),100/33/400  EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),160/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),250/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),400/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),630/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),800/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),5000/33/400 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),100/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),160/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),250/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),400/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),630/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),800/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/415 Ph2,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),5000/33/415 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/690 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/800 EU,1,100,100,100,100,100
-,,no,,Assembly Packets (Core+Tanking+Dispatch),5000/33/800 EU,1,100,100,100,100,100
-,,no,,27ZH100,,1,100,100,100,100,100
-,,no,,23ZDKH 75,,1,100,100,100,100,100
-,,no,,Complete Tank,,1,100,100,100,100,100
-,,no,,Pole Mounting Bracket,,1,100,100,100,100,100
-,,no,,Valves,PRV T-10K1 1R,1,100,100,100,100,100
-,,no,,Valves,PRV T-50 0.4 BAR,1,100,100,100,100,100
-,,no,,Valves,DRAIN VALVE NW 22,1,100,100,100,100,100
-,,no,,Valves,AIR RELEASE PLUG,1,100,100,100,100,100
-,,no,,Valves,ARES DIN25 DOUBLE FLANGE GATE VALVE,1,100,100,100,100,100
-,,no,,Valves,"SINGLE FLANGE BALL VALVE 1"" NW25S-SS",1,100,100,100,100,100
-,,no,,Valves,THROTTLE VALVE FOR RADIATOR NW80 FORMB,1,100,100,100,100,100
-,,no,,Valves,"BALL VALVE 1"" PELGER",1,100,100,100,100,100
-,,no,,Valves,GATE VALVE WITH SAMPLING,1,100,100,100,100,100
-,,no,,Valves,GATE VALVE WITHOUT SAMPLING,1,100,100,100,100,100
-,,no,,Valves,SAMPLING VALVE,1,100,100,100,100,100
-,,no,,Valves,PRV T-10K1 1R,1,100,100,100,100,100
-,,no,,Valves,PRV T-50 0.4 BAR,1,100,100,100,100,100
-,,no,ACCP0016,Valves,DRAIN VALVE NW 22,1,100,100,100,100,100
-,,no,ACCP0016,Valves,DRAIN VALVE NW 31,1,100,100,100,100,100
-,,no,ACCP0016,Valves,DRAIN VALVE NW 40,1,100,100,100,100,100
-,,no,,Valves,AIR RELEASE PLUG,1,100,100,100,100,100
-,,no,,Valves,ARES DIN25 DOUBLE FLANGE GATE VALVE,1,100,100,100,100,100
-,,no,,Valves,"SINGLE FLANGE BALL VALVE 1"" NW25S-SS",1,100,100,100,100,100
-,,no,,Valves,THROTTLE VALVE FOR RADIATOR NW80 FORMB,1,100,100,100,100,100
-,,no,,Valves,"BALL VALVE 1"" PELGER",1,100,100,100,100,100
-,,no,,Valves,GATE VALVE WITH SAMPLING,1,100,100,100,100,100
-,,no,,Valves,GATE VALVE WITHOUT SAMPLING,1,100,100,100,100,100
-,,no,,Valves,SAMPLING VALVE,1,100,100,100,100,100
-,,no,,Valves,"BALL VALVE 1"" Threaded on both sides",1,100,100,100,100,100
-,,no,,Oil Level indicators,Oil Level Indicators,1,100,100,100,100,100
-,,no,,Oil Level indicators,Magnetic- with 400mm boss,1,100,100,100,100,100
-,,no,,Oil Level indicators,Magnetic- with 200mm boss,1,100,100,100,100,100
-,,no,,Oil Level indicators,4 HOLES PRISMATIC,1,100,100,100,100,100
-,,no,,Oil Level indicators,6 HOLES PRISMATIC,1,100,100,100,100,100
-,,no,,Oil Level indicators,8 HOLES PRISMATIC,1,100,100,100,100,100
-,,no,,Oil Level indicators,FLOATING TYPE,1,100,100,100,100,100
-,,no,,Oil Level indicators,VIAT SO4 - Dial Type with Contacts,1,100,100,100,100,100
-,,no,,Oil Level indicators,VIAT SO6 - Dial Type with Contacts,1,100,100,100,100,100
-,,no,,Cable boxes,Cable Boxes,1,100,100,100,100,100
-,,no,,Cable boxes,HV CABLE BOX,1,100,100,100,100,100
-,,no,,Cable boxes,LV CABLE BOX,1,100,100,100,100,100
-,,no,,Cable boxes,WTI BOX,1,100,100,100,100,100
-,,no,,Cable boxes,CONNECTOR BOX,1,100,100,100,100,100
-,,no,,Cable boxes,CT Terminal Box,1,100,100,100,100,100
-,,no,,Other items,Other Parts,1,100,100,100,100,100
-,,no,,Other items,RATING PLATE,1,100,100,100,100,100
-,,no,,Other items,PHASE MARKING PLATES,1,100,100,100,100,100
-,,no,,Other items,S/A MOUNTING BRACKET A-2,1,100,100,100,100,100
-,,no,,Other items,ISD UNIT,1,100,100,100,100,100
-,,no,,Other items,BREATHER 1KG TYPE A,1,100,100,100,100,100
-,,no,,Other items,BREATHER 1KG TYPE B,1,100,100,100,100,100
-,,no,,Other items,BREATHER 1KG TYPE C,1,100,100,100,100,100
-,,no,,Other items,BREATHER 2KG,1,100,100,100,100,100
-,,no,,Other items,THERMOMETER TEK 16,1,100,100,100,100,100
-,,no,,Other items,"THERMOWELL 3/4"" BSP",1,100,100,100,100,100
-,,no,,Other items,THERMOMETER POCKET,1,100,100,100,100,100
-,,no,,Other items,GALVANIZED CUP FOR THERMOMETER POCKET,1,100,100,100,100,100
-,,no,,Other items,BUCHOLZ RELAY EW712,1,100,100,100,100,100
-,,no,,Other items,"CONSERVATOR FILLING CAP AL. 2""",1,100,100,100,100,100
-,,no,,Other items,T/F WHEEL 7613T00691,1,100,100,100,100,100
-,,no,,Other items,T/F WHEEL 7613T00691,1,100,100,100,100,100
-,,no,,Other items,OIL TEMP. INDICATOR TD50 (354 01 12X6.0),1,100,100,100,100,100
-,,no,,Other items,WINDING TEMP. INDICATOR TD76 (354 01 12X6.0),1,100,100,100,100,100
-,,no,,Other items,RTD WTI (PT100),1,100,100,100,100,100
-,,no,,Other items,RTD OTI (PT100),1,100,100,100,100,100
-,,no,,Other items,CT 3000/2A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,100,100,100,100,100
-,,no,,Other items,CT 5000/5A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,100,100,100,100,100
-,,no,,Other items,CT 1600/1A 5P20 15VA/0.5 2 Core,1,100,100,100,100,100
-,,no,,Other items,NCT 400/1A 5P20 15VA,1,100,100,100,100,100
-,,no,,Other items,NCT 1600/1A 5P20 15VA,1,100,100,100,100,100
-,,no,,Other items,NCT 2000/1A 5P20 15VA,1,100,100,100,100,100
-,,no,,Other items,CT TERMINAL BOX (2 TERMINALS),1,100,100,100,100,100
-,,no,,Other items,CT TERMINAL BOX (4 TERMINALS),1,100,100,100,100,100
-,,no,,Other items,CT TERMINAL BOX (6 TERMINALS),1,100,100,100,100,100
-,,no,,Other items,24kV ELBOW CONNECTOR SET (03),1,100,100,100,100,100
-,,no,,Other items,36kV ELBOW CONNECTOR SET (03),1,100,100,100,100,100
-,,no,,Other items,52kV ELBOW CONNECTOR SET (04),1,100,100,100,100,100
-,,no,,Other items,OBO SURGE ARRESTERS,1,100,100,100,100,100
-,,no,,Other items,LTL Name Board,1,100,100,100,100,100
-,,no,,Other items,Nut Bolt & 2 Washers (Galvanized) M10 x 40 mm,1,100,100,100,100,100
-,,no,,Other items,Split washers for tank cover fixing,1,100,100,100,100,100
-,,no,,Other items,M12 bolt nut spring washer & lock washer for earthing terminal,1,100,100,100,100,100
-,,no,,Other items,Flange Gasket,1,100,100,100,100,100
-,,no,,Other items,Wooden Pallete For Packing,1,100,100,100,100,100
-,,no,,Other items,Surge Arresters,1,100,100,100,100,100
-,,no,,Finishing,Painting,1,100,100,100,100,100
-,,no,,Finishing,GALVANIZING,1,100,100,100,100,100
-,,no,,Finishing,PRIMER PAINT & THINNER,1,100,100,100,100,100
-,,no,,Finishing,POWDER PAINT (RAL6028) Marine Grade,1,100,100,100,100,100
-,,no,,Finishing,INTERNAL PAINT,1,100,100,100,100,100
+,,no,OLBK0001,1 - Oil,Unhibited Mineral Oil,1,,,,,
+,,yes,OLBK0002,1 - Oil,Inhibited Mineral Oil,1,,,,,
+,,no,LV FOIL,2 - LV Foil,215 x 0.19,1,,,,,
+,,no,LV FOIL,2 - LV Foil,240 x 0.27,1,,,,,
+,,no,LV FOIL,2 - LV Foil,275 x 0.40,1,,,,,
+,,no,LV FOIL,2 - LV Foil,275 x 0.27,1,,,,,
+,,no,LV FOIL,2 - LV Foil,280 x 0.25,1,,,,,
+,,no,LV FOIL,2 - LV Foil,280 x 0.27,1,,,,,
+,,no,LV FOIL,2 - LV Foil,280 x 0.4,1,,,,,
+,,no,LV FOIL,2 - LV Foil,320 x 0.40,1,,,,,
+,,no,LV FOIL,2 - LV Foil,330 x 0.55,1,,,,,
+,,no,LV FOIL,2 - LV Foil,370 x 0.50,1,,,,,
+,,no,LV FOIL,2 - LV Foil,405 x 0.75,1,,,,,
+,,no,LV FOIL,2 - LV Foil,410 x 0.70,1,,,,,
+,,no,LV FOIL,2 - LV Foil,425 x 0.85,1,,,,,
+,,no,LV FOIL,2 - LV Foil,530 x 0.80,1,,,,,
+,,no,LV FOIL,2 - LV Foil,540 x 0.90,1,,,,,
+,,no,LV FOIL,2 - LV Foil,540 x 0.9,1,,,,,
+,,no,LV FOIL,2 - LV Foil,540 x 1,1,,,,,
+,,no,LV FOIL,2 - LV Foil,565 x 0.90,1,,,,,
+,,no,LV FOIL,2 - LV Foil,630 x 0.45,1,,,,,
+,,no,LV FOIL,2 - LV Foil,630 x 0.45 x 2,1,,,,,
+,,no,LV FOIL,2 - LV Foil,630 x 0.95,1,,,,,
+,,no,LV FOIL,2 - LV Foil,650 x 0.5,1,,,,,
+,,no,LV FOIL,2 - LV Foil,650 x 0.50 x 2,1,,,,,
+,,no,LV FOIL,2 - LV Foil,650 x 1,1,,,,,
+,,no,LV FOIL,2 - LV Foil,675 x 0.9,1,,,,,
+,,no,LV FOIL,2 - LV Foil,685 x 0.6,1,,,,,
+,,no,LV FOIL,2 - LV Foil,685 x 0.60 x 2,1,,,,,
+,,no,LV FOIL,2 - LV Foil,755 x 0.7,1,,,,,
+,,no,LV FOIL,2 - LV Foil,755 x 0.70 x 2,1,,,,,
+,,no,LV FOIL,2 - LV Foil,760 x 0.8,1,,,,,
+,,no,LV FOIL,2 - LV Foil,760 x 0.80 x 2,1,,,,,
+,,no,LV FOIL,2 - LV Foil,760 x 0.95,1,,,,,
+,,no,LV FOIL,2 - LV Foil,800 x 1.35,1,,,,,
+,,no,LV FOIL,2 - LV Foil,800 x 1.35 x 2,1,,,,,
+,,no,CRGO,23ZDKH 75,,1,,,,,
+,,no,,27ZH100,,1,,,,,
+,,no,,3 - Rec. Cu.,3.5 x 11.5,1,,,,,
+,,no,,3 - Rec. Cu.,3.5 x 17.5,1,,,,,
+,,no,,3 - Rec. Cu.,3.5 x 9.5,1,,,,,
+,,no,,3 - Rec. Cu.,4.5 x 10,1,,,,,
+,,no,Busbar,4 - BusBar,25 x 3,1,,,,,
+,,no,Busbar,4 - BusBar,38 x 4,1,,,,,
+,,no,Busbar,4 - BusBar,40 x 6,1,,,,,
+,,no,Busbar,4 - BusBar,50 x 6,1,,,,,
+,,no,Busbar,4 - BusBar,60 x 5,1,,,,,
+,,no,Busbar,4 - BusBar,60 x 8,1,,,,,
+,,no,Busbar,4 - BusBar,75 x 6,1,,,,,
+,,no,Busbar,4 - BusBar,80 x 8,1,,,,,
+,,no,Busbar,4 - BusBar,80 x 10,1,,,,,
+,,no,Busbar,4 - BusBar,100 x 10,1,,,,,
+,,no,Busbar,4 - BusBar,120 x 10,1,,,,,
+,,no,Busbar,4 - BusBar,120 x 12,1,,,,,
+,,no,,6 - Assembly Insulation Packet,50/33/400,1,,,,,
+,,no,,6 - Assembly Insulation Packet,100/33/400  EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,160/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,250/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,400/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,630/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,800/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1000/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1250/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1600/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2000/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2500/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,3150/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,4000/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,5000/33/400 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,100/33/415 Ph2,1,,,,,
+,,no,,6 - Assembly Insulation Packet,160/33/415 Ph2,1,,,,,
+,,no,,6 - Assembly Insulation Packet,250/33/415 Ph2,1,,,,,
+,,no,,6 - Assembly Insulation Packet,400/33/415 Ph2,1,,,,,
+,,no,,6 - Assembly Insulation Packet,630/33/415 Ph2,1,,,,,
+,,no,,6 - Assembly Insulation Packet,800/33/415 Ph2,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1000/33/415 Ph2,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1000/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1250/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1600/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2000/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2500/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,3150/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,4000/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,5000/33/415 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1000/33/690 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1250/33/690 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1600/33/690 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2000/33/690 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2500/33/690 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,3150/33/690 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,4000/33/690 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1000/33/800 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1250/33/800 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,1600/33/800 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2000/33/800 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,2500/33/800 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,3150/33/800 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,4000/33/800 EU,1,,,,,
+,,no,,6 - Assembly Insulation Packet,5000/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),50/33/400,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),100/33/400  EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),160/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),250/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),400/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),630/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),800/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1000/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1250/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1600/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2000/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2500/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),3150/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),4000/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),5000/33/400 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),100/33/415 Ph2,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),160/33/415 Ph2,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),250/33/415 Ph2,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),400/33/415 Ph2,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),630/33/415 Ph2,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),800/33/415 Ph2,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1000/33/415 Ph2,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1000/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1250/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1600/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2000/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2500/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),3150/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),4000/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),5000/33/415 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1000/33/690 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1250/33/690 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1600/33/690 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2000/33/690 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2500/33/690 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),3150/33/690 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),4000/33/690 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1000/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1250/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),1600/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2000/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),2500/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),3150/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),4000/33/800 EU,1,,,,,
+,,no,,7 - Assembly Packets (Core+Tanking+Dispatch),5000/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,50/33/400,1,,,,,
+,,no,,8 - Copper Flexible,100/33/400  EU,1,,,,,
+,,no,,8 - Copper Flexible,160/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,250/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,400/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,630/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,800/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,1000/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,1250/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,1600/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,2000/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,2500/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,3150/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,4000/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,5000/33/400 EU,1,,,,,
+,,no,,8 - Copper Flexible,100/33/415 Ph2,1,,,,,
+,,no,,8 - Copper Flexible,160/33/415 Ph2,1,,,,,
+,,no,,8 - Copper Flexible,250/33/415 Ph2,1,,,,,
+,,no,,8 - Copper Flexible,400/33/415 Ph2,1,,,,,
+,,no,,8 - Copper Flexible,630/33/415 Ph2,1,,,,,
+,,no,,8 - Copper Flexible,800/33/415 Ph2,1,,,,,
+,,no,,8 - Copper Flexible,1000/33/415 Ph2,1,,,,,
+,,no,,8 - Copper Flexible,1000/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,1250/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,1600/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,2000/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,2500/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,3150/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,4000/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,5000/33/415 EU,1,,,,,
+,,no,,8 - Copper Flexible,1000/33/690 EU,1,,,,,
+,,no,,8 - Copper Flexible,1250/33/690 EU,1,,,,,
+,,no,,8 - Copper Flexible,1600/33/690 EU,1,,,,,
+,,no,,8 - Copper Flexible,2000/33/690 EU,1,,,,,
+,,no,,8 - Copper Flexible,2500/33/690 EU,1,,,,,
+,,no,,8 - Copper Flexible,3150/33/690 EU,1,,,,,
+,,no,,8 - Copper Flexible,4000/33/690 EU,1,,,,,
+,,no,,8 - Copper Flexible,1000/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,1250/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,1600/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,2000/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,2500/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,3150/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,4000/33/800 EU,1,,,,,
+,,no,,8 - Copper Flexible,5000/33/800 EU,1,,,,,
+,,no,,DDP Double Layer,0.15,1,,,,,
+,,no,,DDP Single Layer,0.15,1,,,,,
+,,no,,DDP Single Layer,0.25,1,,,,,
+,,no,,Edge Strip,0.25,1,,,,,
+,,no,,HV Insulation Packet,50kVA,1,,,,,
+,,no,,HV Insulation Packet,100kVA,1,,,,,
+,,no,,HV Insulation Packet,160kVA,1,,,,,
+,,no,,HV Insulation Packet,200kVA,1,,,,,
+,,no,,HV Insulation Packet,250kVA,1,,,,,
+,,no,,HV Insulation Packet,315kVA,1,,,,,
+,,no,,HV Insulation Packet,500kVA,1,,,,,
+,,no,,HV Insulation Packet,630kVA ,1,,,,,
+,,no,,HV Insulation Packet,800kVA,1,,,,,
+,,no,,HV Insulation Packet,1000kVA,1,,,,,
+,,no,,HV Insulation Packet,1250kVA,1,,,,,
+,,no,,HV Insulation Packet,1600kVA,1,,,,,
+,,no,,HV Insulation Packet,2000kVA,1,,,,,
+,,no,,HV Insulation Packet,2500kVA,1,,,,,
+,,no,,HV Insulation Packet,3150kVA,1,,,,,
+,,no,,HV Insulation Packet,4000kVA,1,,,,,
+,,no,,HV Insulation Packet,5000kVA,1,,,,,
+,,no,,LV Insulation Packet,50kVA,1,,,,,
+,,no,,LV Insulation Packet,100kVA,1,,,,,
+,,no,,LV Insulation Packet,160kVA,1,,,,,
+,,no,,LV Insulation Packet,200kVA,1,,,,,
+,,no,,LV Insulation Packet,250kVA,1,,,,,
+,,no,,LV Insulation Packet,315kVA,1,,,,,
+,,no,,LV Insulation Packet,500kVA,1,,,,,
+,,no,,LV Insulation Packet,630kVA ,1,,,,,
+,,no,,LV Insulation Packet,800kVA,1,,,,,
+,,no,,LV Insulation Packet,1000kVA,1,,,,,
+,,no,,LV Insulation Packet,1250kVA,1,,,,,
+,,no,,LV Insulation Packet,1600kVA,1,,,,,
+,,no,,LV Insulation Packet,2000kVA,1,,,,,
+,,no,,LV Insulation Packet,2500kVA,1,,,,,
+,,no,,LV Insulation Packet,3150kVA,1,,,,,
+,,no,,LV Insulation Packet,4000kVA,1,,,,,
+,,no,,LV Insulation Packet,5000kVA,1,,,,,
+,,no,,Pole Mounting Bracket,,1,,,,,
+,,no,,Timber Packet,50/33/400,1,,,,,
+,,no,,Timber Packet,100/33/400  EU,1,,,,,
+,,no,,Timber Packet,160/33/400 EU,1,,,,,
+,,no,,Timber Packet,250/33/400 EU,1,,,,,
+,,no,,Timber Packet,400/33/400 EU,1,,,,,
+,,no,,Timber Packet,630/33/400 EU,1,,,,,
+,,no,,Timber Packet,800/33/400 EU,1,,,,,
+,,no,,Timber Packet,1000/33/400 EU,1,,,,,
+,,no,,Timber Packet,1250/33/400 EU,1,,,,,
+,,no,,Timber Packet,1600/33/400 EU,1,,,,,
+,,no,,Timber Packet,2000/33/400 EU,1,,,,,
+,,no,,Timber Packet,2500/33/400 EU,1,,,,,
+,,no,,Timber Packet,3150/33/400 EU,1,,,,,
+,,no,,Timber Packet,4000/33/400 EU,1,,,,,
+,,no,,Timber Packet,5000/33/400 EU,1,,,,,
+,,no,,Timber Packet,100/33/415 Ph2,1,,,,,
+,,no,,Timber Packet,160/33/415 Ph2,1,,,,,
+,,no,,Timber Packet,250/33/415 Ph2,1,,,,,
+,,no,,Timber Packet,400/33/415 Ph2,1,,,,,
+,,no,,Timber Packet,630/33/415 Ph2,1,,,,,
+,,no,,Timber Packet,800/33/415 Ph2,1,,,,,
+,,no,,Timber Packet,1000/33/415 Ph2,1,,,,,
+,,no,,Timber Packet,1000/33/415 EU,1,,,,,
+,,no,,Timber Packet,1250/33/415 EU,1,,,,,
+,,no,,Timber Packet,1600/33/415 EU,1,,,,,
+,,no,,Timber Packet,2000/33/415 EU,1,,,,,
+,,no,,Timber Packet,2500/33/415 EU,1,,,,,
+,,no,,Timber Packet,3150/33/415 EU,1,,,,,
+,,no,,Timber Packet,4000/33/415 EU,1,,,,,
+,,no,,Timber Packet,5000/33/415 EU,1,,,,,
+,,no,,Timber Packet,1000/33/690 EU,1,,,,,
+,,no,,Timber Packet,1250/33/690 EU,1,,,,,
+,,no,,Timber Packet,1600/33/690 EU,1,,,,,
+,,no,,Timber Packet,2000/33/690 EU,1,,,,,
+,,no,,Timber Packet,2500/33/690 EU,1,,,,,
+,,no,,Timber Packet,3150/33/690 EU,1,,,,,
+,,no,,Timber Packet,4000/33/690 EU,1,,,,,
+,,no,,Timber Packet,1000/33/800 EU,1,,,,,
+,,no,,Timber Packet,1250/33/800 EU,1,,,,,
+,,no,,Timber Packet,1600/33/800 EU,1,,,,,
+,,no,,Timber Packet,2000/33/800 EU,1,,,,,
+,,no,,Timber Packet,2500/33/800 EU,1,,,,,
+,,no,,Timber Packet,3150/33/800 EU,1,,,,,
+,,no,,Timber Packet,4000/33/800 EU,1,,,,,
+,,no,,Timber Packet,5000/33/800 EU,1,,,,,
+,,no,ACVL0004,Valves,AIR RELEASE PLUG,1,,,,,
+,,no,,Valves,ARES DIN25 DOUBLE FLANGE GATE VALVE,1,,,,,
+,,no,,Valves,"BALL VALVE 1"" PELGER",1,,,,,
+,,no,,Valves,"BALL VALVE 1"" Threaded on both sides",1,,,,,
+,,no,,Valves,GATE VALVE WITH SAMPLING,1,,,,,
+,,no,,Valves,GATE VALVE WITHOUT SAMPLING,1,,,,,
+,,,ACBS0024,Valves,Pressure Relief Valve Boss 1'' BSP Threaded - 250mm Long,,,,,,
+,,,ACVL0008,Valves,Pressure Relief Valve T50 (306x09) 0.35 bar,,,,,,
+,,,,Valves,Pressure safety valves without contact T-10K 1 G1 Inch,,,,,,
+,,,,Valves,PRV T-10K1 1R,,,,,,
+,,,,Valves,PRV T-50 0.4 BAR,,,,,,
+,,,,Valves,SAMPLING VALVE,,,,,,
+,,,,Valves,"SINGLE FLANGE BALL VALVE 1"" NW25S-SS",,,,,,
+,,,,Valves,THROTTLE VALVE FOR RADIATOR NW80 FORMB,,,,,,
+,,no,ACCP0016,Valves - Drain,DRAIN VALVE NW 22,1,,,,,
+,,no,ACCP0016,Valves - Drain,DRAIN VALVE NW 31,1,,,,,
+,,no,ACCP0016,Valves - Drain,DRAIN VALVE NW 40,1,,,,,
+,,no,ACCP0013,Valves - Gate,Brass End Cap for DIN50 Gate Valve,1,,,,,
+,,no,ACVL0011,Valves - Gate,DIN25 Double Flange Gate Valve with Locking Option,1,,,,,
+,,no,ACVL0038,Valves - Gate,DIN25 Gate Valve (Round Flange) with Locking Option and Sampler - Bronze,1,,,,,
+,,no,ACVL0029,Valves - Gate,DIN50 Double Flange Gate Valve with Locking Option,1,,,,,
+,,no,ACVL0020,Valves - Gate,DIN50 Gate Valve (Round Flange) with Locking Option and Sampler - Bronze,1,,,,,
+,,no,ACVL0028,Valves - Gate,DN15 Gate Valve (Round Flange) with Sampling DIN 42568,1,,,,,
+,,no,ACVL0026,Valves - Gate,DN25 Gate Valve (Round Flange) with Sampling,1,,,,,
+,,no,ACVL0026-T,Valves - Gate,DN25 Gate Valve (Round Flange) with Sampling and Position Indicator,1,,,,,
+,,no,ACVL0027,Valves - Gate,DN25 Gate Valve (Round Flange) without Sampling for CT1909,1,,,,,
+,,no,ACVL0023,Valves - Gate,Gate Valve 1� - Screwed,1,,,,,
+,,,ACOT0202,Valves - Gate,Red Painted Aluminium Knob for Gate Valve 1� - Screwed,,,,,,
+,,no,,Oil Level indicators,Magnetic- with 400mm boss,1,,,,,
+,,no,,Oil Level indicators,Magnetic- with 200mm boss,1,,,,,
+,,no,,Oil Level indicators,4 HOLES PRISMATIC,1,,,,,
+,,no,,Oil Level indicators,6 HOLES PRISMATIC,1,,,,,
+,,no,,Oil Level indicators,8 HOLES PRISMATIC,1,,,,,
+,,no,,Oil Level indicators,FLOATING TYPE,1,,,,,
+,,no,,Oil Level indicators,VIAT SO4 - Dial Type with Contacts,1,,,,,
+,,no,,Oil Level indicators,VIAT SO6 - Dial Type with Contacts,1,,,,,
+,,no,,Cable boxes,HV CABLE BOX,1,,,,,
+,,no,,Cable boxes,LV CABLE BOX,1,,,,,
+,,no,,Cable boxes,WTI BOX,1,,,,,
+,,no,,Cable boxes,CONNECTOR BOX,1,,,,,
+,,no,,Cable boxes,CT Terminal Box,1,,,,,
+,,no,,Other items,Other Parts,1,,,,,
+,,no,,Other items,RATING PLATE,1,,,,,
+,,no,,Other items,PHASE MARKING PLATES,1,,,,,
+,,no,,Other items,S/A MOUNTING BRACKET A-2,1,,,,,
+,,no,,Other items,ISD UNIT,1,,,,,
+,,no,,Other items,BREATHER 1KG TYPE A,1,,,,,
+,,no,,Other items,BREATHER 1KG TYPE B,1,,,,,
+,,no,,Other items,BREATHER 1KG TYPE C,1,,,,,
+,,no,,Other items,BREATHER 2KG,1,,,,,
+,,no,,Other items,THERMOMETER TEK 16,1,,,,,
+,,no,,Other items,"THERMOWELL 3/4"" BSP",1,,,,,
+,,no,,Other items,THERMOMETER POCKET,1,,,,,
+,,no,,Other items,GALVANIZED CUP FOR THERMOMETER POCKET,1,,,,,
+,,no,,Other items,BUCHOLZ RELAY EW712,1,,,,,
+,,no,,Other items,"CONSERVATOR FILLING CAP AL. 2""",1,,,,,
+,,no,,Other items,T/F WHEEL 7613T00691,1,,,,,
+,,no,,Other items,T/F WHEEL 7613T00691,1,,,,,
+,,no,,Other items,OIL TEMP. INDICATOR TD50 (354 01 12X6.0),1,,,,,
+,,no,,Other items,WINDING TEMP. INDICATOR TD76 (354 01 12X6.0),1,,,,,
+,,no,,Other items,RTD WTI (PT100),1,,,,,
+,,no,,Other items,RTD OTI (PT100),1,,,,,
+,,no,,Other items,CT 3000/2A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,,,,,
+,,no,,Other items,CT 5000/5A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,,,,,
+,,no,,Other items,CT 1600/1A 5P20 15VA/0.5 2 Core,1,,,,,
+,,no,,Other items,NCT 400/1A 5P20 15VA,1,,,,,
+,,no,,Other items,NCT 1600/1A 5P20 15VA,1,,,,,
+,,no,,Other items,NCT 2000/1A 5P20 15VA,1,,,,,
+,,no,,Other items,CT TERMINAL BOX (2 TERMINALS),1,,,,,
+,,no,,Other items,CT TERMINAL BOX (4 TERMINALS),1,,,,,
+,,no,,Other items,CT TERMINAL BOX (6 TERMINALS),1,,,,,
+,,no,,Other items,24kV ELBOW CONNECTOR SET (03),1,,,,,
+,,no,,Other items,36kV ELBOW CONNECTOR SET (03),1,,,,,
+,,no,,Other items,52kV ELBOW CONNECTOR SET (04),1,,,,,
+,,no,,Other items,OBO SURGE ARRESTERS,1,,,,,
+,,no,,Other items,LTL Name Board,1,,,,,
+,,no,,Other items,Nut Bolt & 2 Washers (Galvanized) M10 x 40 mm,1,,,,,
+,,no,,Other items,Split washers for tank cover fixing,1,,,,,
+,,no,,Other items,M12 bolt nut spring washer & lock washer for earthing terminal,1,,,,,
+,,no,,Other items,Flange Gasket,1,,,,,
+,,no,,30 - Dispath,Wooden Pallete For Packing,1,,,,,
+,,no,,Other items,Surge Arresters,1,,,,,
+,,no,,Finishing,Painting,1,,,,,
+,,no,,Finishing,GALVANIZING,1,,,,,
+,,no,,Finishing,PRIMER PAINT & THINNER,1,,,,,
+,,no,,Finishing,POWDER PAINT (RAL6028) Marine Grade,1,,,,,
+,,no,,Finishing,INTERNAL PAINT,1,,,,,
+,,no,ACIN0002,Safety features,RIS2 Integrated Safety Detector complete set with fixing device (ISD Unit),1,,,,,
+,,no,ACBS0001,Safety features,Pressure Relief Valve Boss,1,,,,,
+,,no,ACOT0344,Safety features,Marshalling Box Type A with Provision for OTI or WTI,1,,,,,
