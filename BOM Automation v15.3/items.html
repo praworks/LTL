@@ -104,7 +104,9 @@
     // Function to get the icon HTML based on the item code
     function getIconHTML(iconCode) {
       if (iconCode) {
-        return `<img src="icons/${iconCode}.png" alt="${iconCode}" width="28">`;
+        //return `<img src="icons/${iconCode}.png" alt="${iconCode}" width="28">`;
+        return iconCode ? `<img src="icons/${iconCode}.png" alt="${iconCode}" width="28">` : '';
+
       } else {
         return ''; // Return an empty string if iconCode is missing or empty
       }
