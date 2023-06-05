@@ -53,8 +53,8 @@
               // Skip the second cell since it will be replaced with the checkbox
               if (index !== 1) {
                 if (index === 0) {
-                  // Add icon based on item code
-                  const iconCode = rowCells[3].trim(); // Retrieve item code from rowCells[1]
+                  // Add icon based on item code if available
+                  const iconCode = rowCells[3] ? rowCells[3].trim() : ""; // Retrieve item code from rowCells[3] if available
                   row += `<td>${getIconHTML(iconCode)}</td>`;
                 } else {
                   row += `<td contenteditable>${cell}</td>`;
@@ -103,9 +103,29 @@
 
     // Function to get the icon HTML based on the item code
     function getIconHTML(iconCode) {
-      return `<img src="icons/${iconCode}.png" alt="${iconCode}" width="28">`;
+      if (iconCode) {
+        return `<img src="icons/${iconCode}.png" alt="${iconCode}" width="28">`;
+      } else {
+        return ''; // Return an empty string if iconCode is missing or empty
+      }
     }
 
+    // Call the function to fetch CSV data and generate the table
+    fetchCSVAndGenerateTable();
+  </script>
+</head>
+
+<body>
+  <h3 align="center">BOM simplified V15.3 / Click and save your selection as csv </h3>
+
+  <div>
+    <button onclick="saveTableAsCSV()" style="font-size: 18px; padding: 5px;">Save as CSV</button>
+    <label for="filterCheckbox" style="font-size: 18px; padding: 5px;">Show selected items only:</label>
+    <input style="font-size: 18px; padding: 5px;" type="checkbox" id="filterCheckbox" onchange="filterTable()">
+  </div>
+  <table id="myTable"></table>
+
+  <script>
     // Function to filter the table based on the checkbox state
     function filterTable() {
       const checkboxes = document.querySelectorAll("input[type='checkbox']");
@@ -146,23 +166,7 @@
       downloadLink.click();
       document.body.removeChild(downloadLink);
     }
-    
-    // Call the function to fetch CSV data and generate the table
-    fetchCSVAndGenerateTable();
-  </script>
-</head>
 
-<body>
-  <h3 align="center">BOM simplified V15.3 / Click and save your selection as csv </h3>
-  
-  <div>
-    <button onclick="saveTableAsCSV()" style="font-size: 18px; padding: 5px;">Save as CSV</button>
-    <label for="filterCheckbox" style="font-size: 18px; padding: 5px;">Show selected items only:</label>
-    <input style="font-size: 18px; padding: 5px;" type="checkbox" id="filterCheckbox" onchange="filterTable()">
-  </div>
-  <table id="myTable"></table>
-
-  <script>
     // Show all items when the filter checkbox is unchecked
     document.getElementById("filterCheckbox").addEventListener("change", function () {
       if (!this.checked) {
