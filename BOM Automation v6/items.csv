@@ -1,196 +1,359 @@
 ﻿Checkbox,Icon,Selected,Item code,Tag,Description,Quantity kg/l/nos,Ex. Works Price,CIF,Duty Free,Duty Paid,Export
 ,,no,OLBK0002,Oil,Inhibited Mineral Oil,1,100,100,100,100,100
-,,yes,OLBK0001,Oil,Unhibited Mineral Oil,1,100,100,100,100,100
-,,yes,ACIN0013,LV Foil,215 x 0.19,1,100,100,100,100,100
-,,no,ACIN0014,LV Foil,240 x 0.27,1,100,100,100,100,100
-,,no,ACIN0015,LV Foil,275 x 0.40,1,100,100,100,100,100
-,,no,ACIN0016,LV Foil,275 x 0.27,1,100,100,100,100,100
-,,no,ACIN0017,LV Foil,280 x 0.25,1,100,100,100,100,100
-,,no,ACIN0018,LV Foil,280 x 0.27,1,100,100,100,100,100
-,,no,ACIN0019,LV Foil,280 x 0.4,1,100,100,100,100,100
-,,no,ACIN0020,LV Foil,3.5 x 11.5,1,100,100,100,100,100
-,,no,ACIN0021,LV Foil,3.5 x 17.5,1,100,100,100,100,100
-,,no,ACIN0022,LV Foil,3.5 x 9.5,1,100,100,100,100,100
-,,no,ACIN0023,LV Foil,320 x 0.40,1,100,100,100,100,100
-,,no,ACIN0024,LV Foil,330 x 0.55,1,100,100,100,100,100
-,,no,ACIN0025,LV Foil,370 x 0.50,1,100,100,100,100,100
-,,no,ACIN0026,LV Foil,4.5 x 10,1,100,100,100,100,100
-,,no,ACIN0027,LV Foil,405 x 0.75,1,100,100,100,100,100
-,,no,ACIN0028,LV Foil,410 x 0.70,1,100,100,100,100,100
-,,no,ACIN0029,LV Foil,425 x 0.85,1,100,100,100,100,100
-,,no,ACIN0030,LV Foil,530 x 0.80,1,100,100,100,100,100
-,,no,ACIN0031,LV Foil,540 x 0.90,1,100,100,100,100,100
-,,no,ACIN0032,LV Foil,540 x 0.9,1,100,100,100,100,100
-,,no,ACIN0033,LV Foil,540 x 1,1,100,100,100,100,100
-,,no,ACIN0034,LV Foil,565 x 0.90,1,100,100,100,100,100
-,,no,ACIN0035,LV Foil,630 x 0.45,1,100,100,100,100,100
-,,no,ACIN0036,LV Foil,630 x 0.45 x 2,1,100,100,100,100,100
-,,no,ACIN0037,LV Foil,630 x 0.95,1,100,100,100,100,100
-,,no,ACIN0038,LV Foil,650 x 0.5,1,100,100,100,100,100
-,,no,ACIN0039,LV Foil,650 x 0.50 x 2,1,100,100,100,100,100
-,,no,ACIN0040,LV Foil,650 x 1,1,100,100,100,100,100
-,,no,ACIN0041,LV Foil,675 x 0.9,1,100,100,100,100,100
-,,no,ACIN0042,LV Foil,685 x 0.6,1,100,100,100,100,100
-,,no,ACIN0043,LV Foil,685 x 0.60 x 2,1,100,100,100,100,100
-,,no,ACIN0044,LV Foil,755 x 0.7,1,100,100,100,100,100
-,,no,ACIN0045,LV Foil,755 x 0.70 x 2,1,100,100,100,100,100
-,,no,ACIN0046,LV Foil,760 x 0.8,1,100,100,100,100,100
-,,no,ACIN0047,LV Foil,760 x 0.80 x 2,1,100,100,100,100,100
-,,no,ACIN0048,LV Foil,760 x 0.95,1,100,100,100,100,100
-,,no,ACIN0049,LV Foil,800 x 1.35,1,100,100,100,100,100
-,,no,ACIN0050,LV Foil,800 x 1.35 x 2,1,100,100,100,100,100
-,,no,ACIN0051,BusBar,25 x 3,1,100,100,100,100,100
-,,no,ACIN0052,BusBar,38 x 4,1,100,100,100,100,100
-,,no,ACIN0053,BusBar,40 x 6,1,100,100,100,100,100
-,,no,ACIN0054,BusBar,50 x 6,1,100,100,100,100,100
-,,no,ACIN0055,BusBar,60 x 5,1,100,100,100,100,100
-,,no,ACIN0056,BusBar,60 x 8,1,100,100,100,100,100
-,,no,ACIN0057,BusBar,75 x 6,1,100,100,100,100,100
-,,no,ACIN0058,BusBar,80 x 8,1,100,100,100,100,100
-,,no,ACIN0059,BusBar,80 x 10,1,100,100,100,100,100
-,,no,ACIN0060,BusBar,100 x 10,1,100,100,100,100,100
-,,no,ACIN0061,BusBar,120 x 10,1,100,100,100,100,100
-,,no,ACIN0062,BusBar,120 x 12,1,100,100,100,100,100
-,,no,ACIN0063,,,1,100,100,100,100,100
-,,no,ACIN0064,,,1,100,100,100,100,100
-,,no,ACIN0065,,,1,100,100,100,100,100
-,,no,ACIN0066,,,1,100,100,100,100,100
-,,no,ACIN0067,,,1,100,100,100,100,100
-,,no,ACIN0068,,,1,100,100,100,100,100
-,,no,ACIN0069,,,1,100,100,100,100,100
-,,no,ACIN0070,,,1,100,100,100,100,100
-,,no,ACIN0071,,,1,100,100,100,100,100
-,,no,ACIN0072,,,1,100,100,100,100,100
-,,no,ACIN0073,,,1,100,100,100,100,100
-,,no,ACIN0074,,,1,100,100,100,100,100
-,,no,ACIN0075,,,1,100,100,100,100,100
-,,no,ACIN0076,,,1,100,100,100,100,100
-,,no,ACIN0077,,,1,100,100,100,100,100
-,,no,ACIN0078,,,1,100,100,100,100,100
-,,no,ACIN0079,,,1,100,100,100,100,100
-,,no,ACIN0080,,,1,100,100,100,100,100
-,,no,ACIN0081,,,1,100,100,100,100,100
-,,no,ACIN0082,,,1,100,100,100,100,100
-,,no,ACIN0083,,,1,100,100,100,100,100
-,,no,ACIN0084,,,1,100,100,100,100,100
-,,no,ACIN0085,,,1,100,100,100,100,100
-,,no,ACIN0086,,,1,100,100,100,100,100
-,,no,ACIN0087,,,1,100,100,100,100,100
-,,no,ACIN0088,,,1,100,100,100,100,100
-,,no,ACIN0089,,,1,100,100,100,100,100
-,,no,ACIN0090,,,1,100,100,100,100,100
-,,no,ACIN0091,,,1,100,100,100,100,100
-,,no,ACIN0092,,,1,100,100,100,100,100
-,,no,ACIN0093,,,1,100,100,100,100,100
-,,no,ACIN0094,,,1,100,100,100,100,100
-,,no,ACIN0095,,,1,100,100,100,100,100
-,,no,ACIN0096,,,1,100,100,100,100,100
-,,no,ACIN0097,,,1,100,100,100,100,100
-,,no,ACIN0098,,,1,100,100,100,100,100
-,,no,ACIN0099,,,1,100,100,100,100,100
-,,no,ACIN0100,,,1,100,100,100,100,100
-,,no,ACIN0101,,,1,100,100,100,100,100
-,,no,ACIN0102,,,1,100,100,100,100,100
-,,no,ACIN0103,,,1,100,100,100,100,100
-,,no,ACIN0104,,,1,100,100,100,100,100
-,,no,ACIN0105,,,1,100,100,100,100,100
-,,no,ACIN0106,,,1,100,100,100,100,100
-,,no,ACIN0107,,,1,100,100,100,100,100
-,,no,ACIN0108,,,1,100,100,100,100,100
-,,no,ACIN0109,,,1,100,100,100,100,100
-,,no,ACIN0110,,,1,100,100,100,100,100
-,,no,ACIN0111,,,1,100,100,100,100,100
-,,no,ACIN0112,,,1,100,100,100,100,100
-,,no,ACIN0113,,,1,100,100,100,100,100
-,,no,ACIN0114,,,1,100,100,100,100,100
-,,no,ACIN0115,,,1,100,100,100,100,100
-,,no,ACIN0116,,,1,100,100,100,100,100
-,,no,ACIN0117,,,1,100,100,100,100,100
-,,no,ACIN0118,,,1,100,100,100,100,100
-,,no,ACIN0119,,,1,100,100,100,100,100
-,,no,ACIN0120,,,1,100,100,100,100,100
-,,no,ACIN0121,,,1,100,100,100,100,100
-,,no,ACIN0122,,,1,100,100,100,100,100
-,,no,ACIN0123,,,1,100,100,100,100,100
-,,no,ACIN0124,,,1,100,100,100,100,100
-,,no,ACIN0125,,,1,100,100,100,100,100
-,,no,ACIN0126,,,1,100,100,100,100,100
-,,no,ACIN0127,,,1,100,100,100,100,100
-,,no,ACIN0128,,,1,100,100,100,100,100
-,,no,ACIN0129,,,1,100,100,100,100,100
-,,no,ACIN0130,,,1,100,100,100,100,100
-,,no,ACIN0131,,,1,100,100,100,100,100
-,,no,ACIN0132,,,1,100,100,100,100,100
-,,no,ACIN0133,Valves,"PRV T-10K1 1R""",1,100,100,100,100,100
-,,no,ACIN0134,Valves,PRV T-50 0.4 BAR,1,100,100,100,100,100
-,,no,ACIN0135,Valves,DRAIN VALVE NW 22,1,100,100,100,100,100
-,,no,ACIN0136,Valves,AIR RELEASE PLUG,1,100,100,100,100,100
-,,no,ACIN0137,Valves,ARES DIN25 DOUBLE FLANGE GATE VALVE,1,100,100,100,100,100
-,,no,ACIN0138,Valves,"SINGLE FLANGE BALL VALVE 1"" NW25S-SS",1,100,100,100,100,100
-,,no,ACIN0139,Valves,THROTTLE VALVE FOR RADIATOR NW80 FORMB,1,100,100,100,100,100
-,,no,ACIN0140,Valves,"BALL VALVE 1"" PELGER",1,100,100,100,100,100
-,,no,ACIN0141,Valves,GATE VALVE WITH SAMPLING,1,100,100,100,100,100
-,,no,ACIN0142,Valves,GATE VALVE WITHOUT SAMPLING,1,100,100,100,100,100
-,,no,ACIN0143,Valves,SAMPLING VALVE,1,100,100,100,100,100
-,,no,ACIN0144,Valves,"BALL VALVE 1"" Threaded on both sides",1,100,100,100,100,100
-,,no,ACIN0145,Oil Level indicators,Oil Level Indicators,1,100,100,100,100,100
-,,no,ACIN0146,Oil Level indicators,Magnetic- with 400mm boss,1,100,100,100,100,100
-,,no,ACIN0147,Oil Level indicators,Magnetic- with 200mm boss,1,100,100,100,100,100
-,,no,ACIN0148,Oil Level indicators,4 HOLES PRISMATIC,1,100,100,100,100,100
-,,no,ACIN0149,Oil Level indicators,6 HOLES PRISMATIC,1,100,100,100,100,100
-,,no,ACIN0150,Oil Level indicators,8 HOLES PRISMATIC,1,100,100,100,100,100
-,,no,ACIN0151,Oil Level indicators,FLOATING TYPE,1,100,100,100,100,100
-,,no,ACIN0152,Oil Level indicators,VIAT SO4 - Dial Type with Contacts,1,100,100,100,100,100
-,,no,ACIN0153,Oil Level indicators,VIAT SO6 - Dial Type with Contacts,1,100,100,100,100,100
-,,no,ACIN0154,Cable boxes,Cable Boxes,1,100,100,100,100,100
-,,no,ACIN0155,Cable boxes,HV CABLE BOX,1,100,100,100,100,100
-,,no,ACIN0156,Cable boxes,LV CABLE BOX,1,100,100,100,100,100
-,,no,ACIN0157,Cable boxes,WTI BOX,1,100,100,100,100,100
-,,no,ACIN0158,Cable boxes,CONNECTOR BOX,1,100,100,100,100,100
-,,no,ACIN0159,Cable boxes,CT Terminal Box,1,100,100,100,100,100
-,,no,ACIN0160,Other items,Other Parts,1,100,100,100,100,100
-,,no,ACIN0161,Other items,RATING PLATE,1,100,100,100,100,100
-,,no,ACIN0162,Other items,PHASE MARKING PLATES,1,100,100,100,100,100
-,,no,ACIN0163,Other items,S/A MOUNTING BRACKET A-2,1,100,100,100,100,100
-,,no,ACIN0164,Other items,ISD UNIT,1,100,100,100,100,100
-,,no,ACIN0165,Other items,BREATHER 1KG TYPE A,1,100,100,100,100,100
-,,no,ACIN0166,Other items,BREATHER 1KG TYPE B,1,100,100,100,100,100
-,,no,ACIN0167,Other items,BREATHER 1KG TYPE C,1,100,100,100,100,100
-,,no,ACIN0168,Other items,BREATHER 2KG,1,100,100,100,100,100
-,,no,ACIN0169,Other items,THERMOMETER TEK 16,1,100,100,100,100,100
-,,no,ACIN0170,Other items,"THERMOWELL 3/4"" BSP",1,100,100,100,100,100
-,,no,ACIN0171,Other items,THERMOMETER POCKET,1,100,100,100,100,100
-,,no,ACIN0172,Other items,GALVANIZED CUP FOR THERMOMETER POCKET,1,100,100,100,100,100
-,,no,ACIN0173,Other items,BUCHOLZ RELAY EW712,1,100,100,100,100,100
-,,no,ACIN0174,Other items,"CONSERVATOR FILLING CAP AL. 2""",1,100,100,100,100,100
-,,no,ACIN0175,Other items,T/F WHEEL 7613T00691,1,100,100,100,100,100
-,,no,ACIN0176,Other items,T/F WHEEL 7613T00691,1,100,100,100,100,100
-,,no,ACIN0177,Other items,OIL TEMP. INDICATOR TD50 (354 01 12X6.0),1,100,100,100,100,100
-,,no,ACIN0178,Other items,WINDING TEMP. INDICATOR TD76 (354 01 12X6.0),1,100,100,100,100,100
-,,no,ACIN0179,Other items,RTD WTI (PT100),1,100,100,100,100,100
-,,no,ACIN0180,Other items,RTD OTI (PT100),1,100,100,100,100,100
-,,no,ACIN0181,Other items,CT 3000/2A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,100,100,100,100,100
-,,no,ACIN0182,Other items,CT 5000/5A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,100,100,100,100,100
-,,no,ACIN0183,Other items,CT 1600/1A 5P20 15VA/0.5 2 Core,1,100,100,100,100,100
-,,no,ACIN0184,Other items,NCT 400/1A 5P20 15VA,1,100,100,100,100,100
-,,no,ACIN0185,Other items,NCT 1600/1A 5P20 15VA,1,100,100,100,100,100
-,,no,ACIN0186,Other items,NCT 2000/1A 5P20 15VA,1,100,100,100,100,100
-,,no,ACIN0187,Other items,CT TERMINAL BOX (2 TERMINALS),1,100,100,100,100,100
-,,no,ACIN0188,Other items,CT TERMINAL BOX (4 TERMINALS),1,100,100,100,100,100
-,,no,ACIN0189,Other items,CT TERMINAL BOX (6 TERMINALS),1,100,100,100,100,100
-,,no,ACIN0190,Other items,24kV ELBOW CONNECTOR SET (03),1,100,100,100,100,100
-,,no,ACIN0191,Other items,36kV ELBOW CONNECTOR SET (03),1,100,100,100,100,100
-,,no,ACIN0192,Other items,52kV ELBOW CONNECTOR SET (04),1,100,100,100,100,100
-,,no,ACIN0193,Other items,OBO SURGE ARRESTERS,1,100,100,100,100,100
-,,no,ACIN0194,Other items,LTL Name Board,1,100,100,100,100,100
-,,no,ACIN0195,Other items,Nut Bolt & 2 Washers (Galvanized) M10 x 40 mm,1,100,100,100,100,100
-,,no,ACIN0196,Other items,Split washers for tank cover fixing,1,100,100,100,100,100
-,,no,ACIN0197,Other items,M12 bolt nut spring washer & lock washer for earthing terminal,1,100,100,100,100,100
-,,no,ACIN0198,Other items,Flange Gasket,1,100,100,100,100,100
-,,no,ACIN0199,Other items,Wooden Pallete For Packing,1,100,100,100,100,100
-,,no,ACIN0200,Other items,Surge Arresters,1,100,100,100,100,100
-,,no,ACIN0201,Finishing,Painting,1,100,100,100,100,100
-,,no,ACIN0202,Finishing,GALVANIZING,1,100,100,100,100,100
-,,no,ACIN0203,Finishing,PRIMER PAINT & THINNER,1,100,100,100,100,100
-,,no,ACIN0204,Finishing,POWDER PAINT (RAL6028) Marine Grade,1,100,100,100,100,100
-,,no,ACIN0205,Finishing,INTERNAL PAINT,1,100,100,100,100,100
+,,no,OLBK0001,Oil,Unhibited Mineral Oil,1,100,100,100,100,100
+,,no,,LV Foil,215 x 0.19,1,100,100,100,100,100
+,,no,,LV Foil,240 x 0.27,1,100,100,100,100,100
+,,no,,LV Foil,275 x 0.40,1,100,100,100,100,100
+,,no,,LV Foil,275 x 0.27,1,100,100,100,100,100
+,,no,,LV Foil,280 x 0.25,1,100,100,100,100,100
+,,no,,LV Foil,280 x 0.27,1,100,100,100,100,100
+,,no,,LV Foil,280 x 0.4,1,100,100,100,100,100
+,,no,,LV Foil,320 x 0.40,1,100,100,100,100,100
+,,no,,LV Foil,330 x 0.55,1,100,100,100,100,100
+,,no,,LV Foil,370 x 0.50,1,100,100,100,100,100
+,,no,,LV Foil,405 x 0.75,1,100,100,100,100,100
+,,no,,LV Foil,410 x 0.70,1,100,100,100,100,100
+,,no,,LV Foil,425 x 0.85,1,100,100,100,100,100
+,,no,,LV Foil,530 x 0.80,1,100,100,100,100,100
+,,no,,LV Foil,540 x 0.90,1,100,100,100,100,100
+,,no,,LV Foil,540 x 0.9,1,100,100,100,100,100
+,,no,,LV Foil,540 x 1,1,100,100,100,100,100
+,,no,,LV Foil,565 x 0.90,1,100,100,100,100,100
+,,no,,LV Foil,630 x 0.45,1,100,100,100,100,100
+,,no,,LV Foil,630 x 0.45 x 2,1,100,100,100,100,100
+,,no,,LV Foil,630 x 0.95,1,100,100,100,100,100
+,,no,,LV Foil,650 x 0.5,1,100,100,100,100,100
+,,no,,LV Foil,650 x 0.50 x 2,1,100,100,100,100,100
+,,no,,LV Foil,650 x 1,1,100,100,100,100,100
+,,no,,LV Foil,675 x 0.9,1,100,100,100,100,100
+,,no,,LV Foil,685 x 0.6,1,100,100,100,100,100
+,,no,,LV Foil,685 x 0.60 x 2,1,100,100,100,100,100
+,,no,,LV Foil,755 x 0.7,1,100,100,100,100,100
+,,no,,LV Foil,755 x 0.70 x 2,1,100,100,100,100,100
+,,no,,LV Foil,760 x 0.8,1,100,100,100,100,100
+,,no,,LV Foil,760 x 0.80 x 2,1,100,100,100,100,100
+,,no,,LV Foil,760 x 0.95,1,100,100,100,100,100
+,,no,,LV Foil,800 x 1.35,1,100,100,100,100,100
+,,no,,LV Foil,800 x 1.35 x 2,1,100,100,100,100,100
+,,no,,Rec. Cu.,3.5 x 11.5,1,100,100,100,100,100
+,,no,,Rec. Cu.,3.5 x 17.5,1,100,100,100,100,100
+,,no,,Rec. Cu.,3.5 x 9.5,1,100,100,100,100,100
+,,no,,Rec. Cu.,4.5 x 10,1,100,100,100,100,100
+,,no,,BusBar,25 x 3,1,100,100,100,100,100
+,,no,,BusBar,38 x 4,1,100,100,100,100,100
+,,no,,BusBar,40 x 6,1,100,100,100,100,100
+,,no,,BusBar,50 x 6,1,100,100,100,100,100
+,,no,,BusBar,60 x 5,1,100,100,100,100,100
+,,no,,BusBar,60 x 8,1,100,100,100,100,100
+,,no,,BusBar,75 x 6,1,100,100,100,100,100
+,,no,,BusBar,80 x 8,1,100,100,100,100,100
+,,no,,BusBar,80 x 10,1,100,100,100,100,100
+,,no,,BusBar,100 x 10,1,100,100,100,100,100
+,,no,,BusBar,120 x 10,1,100,100,100,100,100
+,,no,,BusBar,120 x 12,1,100,100,100,100,100
+,,no,,DDP Double Layer,0.15,1,100,100,100,100,100
+,,no,,DDP Single Layer,0.15,1,100,100,100,100,100
+,,no,,DDP Single Layer,0.25,1,100,100,100,100,100
+,,no,,Edge Strip,0.25,1,100,100,100,100,100
+,,no,,LV Insulation Packet,50kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,100kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,160kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,200kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,250kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,315kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,500kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,630kVA ,1,100,100,100,100,100
+,,no,,LV Insulation Packet,800kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,1000kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,1250kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,1600kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,2000kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,2500kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,3150kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,4000kVA,1,100,100,100,100,100
+,,no,,LV Insulation Packet,5000kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,50kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,100kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,160kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,200kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,250kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,315kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,500kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,630kVA ,1,100,100,100,100,100
+,,no,,HV Insulation Packet,800kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,1000kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,1250kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,1600kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,2000kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,2500kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,3150kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,4000kVA,1,100,100,100,100,100
+,,no,,HV Insulation Packet,5000kVA,1,100,100,100,100,100
+,,no,,Copper Flexible,50/33/400,1,100,100,100,100,100
+,,no,,Copper Flexible,100/33/400  EU,1,100,100,100,100,100
+,,no,,Copper Flexible,160/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,250/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,400/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,630/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,800/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1000/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1250/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1600/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2000/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2500/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,3150/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,4000/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,5000/33/400 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,100/33/415 Ph2,1,100,100,100,100,100
+,,no,,Copper Flexible,160/33/415 Ph2,1,100,100,100,100,100
+,,no,,Copper Flexible,250/33/415 Ph2,1,100,100,100,100,100
+,,no,,Copper Flexible,400/33/415 Ph2,1,100,100,100,100,100
+,,no,,Copper Flexible,630/33/415 Ph2,1,100,100,100,100,100
+,,no,,Copper Flexible,800/33/415 Ph2,1,100,100,100,100,100
+,,no,,Copper Flexible,1000/33/415 Ph2,1,100,100,100,100,100
+,,no,,Copper Flexible,1000/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1250/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1600/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2000/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2500/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,3150/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,4000/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,5000/33/415 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1000/33/690 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1250/33/690 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1600/33/690 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2000/33/690 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2500/33/690 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,3150/33/690 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,4000/33/690 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1000/33/800 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1250/33/800 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,1600/33/800 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2000/33/800 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,2500/33/800 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,3150/33/800 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,4000/33/800 EU,1,100,100,100,100,100
+,,no,,Copper Flexible,5000/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,50/33/400,1,100,100,100,100,100
+,,no,,Timber Packet,100/33/400  EU,1,100,100,100,100,100
+,,no,,Timber Packet,160/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,250/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,400/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,630/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,800/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1000/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1250/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1600/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2000/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2500/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,3150/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,4000/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,5000/33/400 EU,1,100,100,100,100,100
+,,no,,Timber Packet,100/33/415 Ph2,1,100,100,100,100,100
+,,no,,Timber Packet,160/33/415 Ph2,1,100,100,100,100,100
+,,no,,Timber Packet,250/33/415 Ph2,1,100,100,100,100,100
+,,no,,Timber Packet,400/33/415 Ph2,1,100,100,100,100,100
+,,no,,Timber Packet,630/33/415 Ph2,1,100,100,100,100,100
+,,no,,Timber Packet,800/33/415 Ph2,1,100,100,100,100,100
+,,no,,Timber Packet,1000/33/415 Ph2,1,100,100,100,100,100
+,,no,,Timber Packet,1000/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1250/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1600/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2000/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2500/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,3150/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,4000/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,5000/33/415 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1000/33/690 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1250/33/690 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1600/33/690 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2000/33/690 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2500/33/690 EU,1,100,100,100,100,100
+,,no,,Timber Packet,3150/33/690 EU,1,100,100,100,100,100
+,,no,,Timber Packet,4000/33/690 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1000/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1250/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,1600/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2000/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,2500/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,3150/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,4000/33/800 EU,1,100,100,100,100,100
+,,no,,Timber Packet,5000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,50/33/400,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,100/33/400  EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,160/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,250/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,400/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,630/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,800/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1250/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1600/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2500/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,3150/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,4000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,5000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,100/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,160/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,250/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,400/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,630/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,800/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1000/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1250/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1600/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2500/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,3150/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,4000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,5000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1000/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1250/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1600/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2000/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2500/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,3150/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,4000/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1250/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,1600/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,2500/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,3150/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,4000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Insulation Packet,5000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),50/33/400,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),100/33/400  EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),160/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),250/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),400/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),630/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),800/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),5000/33/400 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),100/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),160/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),250/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),400/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),630/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),800/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/415 Ph2,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),5000/33/415 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/690 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1250/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),1600/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),2500/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),3150/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),4000/33/800 EU,1,100,100,100,100,100
+,,no,,Assembly Packets (Core+Tanking+Dispatch),5000/33/800 EU,1,100,100,100,100,100
+,,no,,27ZH100,,1,100,100,100,100,100
+,,no,,23ZDKH 75,,1,100,100,100,100,100
+,,no,,Complete Tank,,1,100,100,100,100,100
+,,no,,Pole Mounting Bracket,,1,100,100,100,100,100
+,,no,,Valves,"PRV T-10K1 1R""",1,100,100,100,100,100
+,,no,,Valves,PRV T-50 0.4 BAR,1,100,100,100,100,100
+,,no,,Valves,DRAIN VALVE NW 22,1,100,100,100,100,100
+,,no,,Valves,AIR RELEASE PLUG,1,100,100,100,100,100
+,,no,,Valves,ARES DIN25 DOUBLE FLANGE GATE VALVE,1,100,100,100,100,100
+,,no,,Valves,"SINGLE FLANGE BALL VALVE 1"" NW25S-SS",1,100,100,100,100,100
+,,no,,Valves,THROTTLE VALVE FOR RADIATOR NW80 FORMB,1,100,100,100,100,100
+,,no,,Valves,"BALL VALVE 1"" PELGER",1,100,100,100,100,100
+,,no,,Valves,GATE VALVE WITH SAMPLING,1,100,100,100,100,100
+,,no,,Valves,GATE VALVE WITHOUT SAMPLING,1,100,100,100,100,100
+,,no,,Valves,SAMPLING VALVE,1,100,100,100,100,100
+,,no,,Valves,"PRV T-10K1 1R""",1,100,100,100,100,100
+,,no,,Valves,PRV T-50 0.4 BAR,1,100,100,100,100,100
+,,no,,Valves,DRAIN VALVE NW 22,1,100,100,100,100,100
+,,no,,Valves,AIR RELEASE PLUG,1,100,100,100,100,100
+,,no,,Valves,ARES DIN25 DOUBLE FLANGE GATE VALVE,1,100,100,100,100,100
+,,no,,Valves,"SINGLE FLANGE BALL VALVE 1"" NW25S-SS",1,100,100,100,100,100
+,,no,,Valves,THROTTLE VALVE FOR RADIATOR NW80 FORMB,1,100,100,100,100,100
+,,no,,Valves,"BALL VALVE 1"" PELGER",1,100,100,100,100,100
+,,no,,Valves,GATE VALVE WITH SAMPLING,1,100,100,100,100,100
+,,no,,Valves,GATE VALVE WITHOUT SAMPLING,1,100,100,100,100,100
+,,no,,Valves,SAMPLING VALVE,1,100,100,100,100,100
+,,no,,Valves,"BALL VALVE 1"" Threaded on both sides",1,100,100,100,100,100
+,,no,,Oil Level indicators,Oil Level Indicators,1,100,100,100,100,100
+,,no,,Oil Level indicators,Magnetic- with 400mm boss,1,100,100,100,100,100
+,,no,,Oil Level indicators,Magnetic- with 200mm boss,1,100,100,100,100,100
+,,no,,Oil Level indicators,4 HOLES PRISMATIC,1,100,100,100,100,100
+,,no,,Oil Level indicators,6 HOLES PRISMATIC,1,100,100,100,100,100
+,,no,,Oil Level indicators,8 HOLES PRISMATIC,1,100,100,100,100,100
+,,no,,Oil Level indicators,FLOATING TYPE,1,100,100,100,100,100
+,,no,,Oil Level indicators,VIAT SO4 - Dial Type with Contacts,1,100,100,100,100,100
+,,no,,Oil Level indicators,VIAT SO6 - Dial Type with Contacts,1,100,100,100,100,100
+,,no,,Cable boxes,Cable Boxes,1,100,100,100,100,100
+,,no,,Cable boxes,HV CABLE BOX,1,100,100,100,100,100
+,,no,,Cable boxes,LV CABLE BOX,1,100,100,100,100,100
+,,no,,Cable boxes,WTI BOX,1,100,100,100,100,100
+,,no,,Cable boxes,CONNECTOR BOX,1,100,100,100,100,100
+,,no,,Cable boxes,CT Terminal Box,1,100,100,100,100,100
+,,no,,Other items,Other Parts,1,100,100,100,100,100
+,,no,,Other items,RATING PLATE,1,100,100,100,100,100
+,,no,,Other items,PHASE MARKING PLATES,1,100,100,100,100,100
+,,no,,Other items,S/A MOUNTING BRACKET A-2,1,100,100,100,100,100
+,,no,,Other items,ISD UNIT,1,100,100,100,100,100
+,,no,,Other items,BREATHER 1KG TYPE A,1,100,100,100,100,100
+,,no,,Other items,BREATHER 1KG TYPE B,1,100,100,100,100,100
+,,no,,Other items,BREATHER 1KG TYPE C,1,100,100,100,100,100
+,,no,,Other items,BREATHER 2KG,1,100,100,100,100,100
+,,no,,Other items,THERMOMETER TEK 16,1,100,100,100,100,100
+,,no,,Other items,"THERMOWELL 3/4"" BSP",1,100,100,100,100,100
+,,no,,Other items,THERMOMETER POCKET,1,100,100,100,100,100
+,,no,,Other items,GALVANIZED CUP FOR THERMOMETER POCKET,1,100,100,100,100,100
+,,no,,Other items,BUCHOLZ RELAY EW712,1,100,100,100,100,100
+,,no,,Other items,"CONSERVATOR FILLING CAP AL. 2""",1,100,100,100,100,100
+,,no,,Other items,T/F WHEEL 7613T00691,1,100,100,100,100,100
+,,no,,Other items,T/F WHEEL 7613T00691,1,100,100,100,100,100
+,,no,,Other items,OIL TEMP. INDICATOR TD50 (354 01 12X6.0),1,100,100,100,100,100
+,,no,,Other items,WINDING TEMP. INDICATOR TD76 (354 01 12X6.0),1,100,100,100,100,100
+,,no,,Other items,RTD WTI (PT100),1,100,100,100,100,100
+,,no,,Other items,RTD OTI (PT100),1,100,100,100,100,100
+,,no,,Other items,CT 3000/2A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,100,100,100,100,100
+,,no,,Other items,CT 5000/5A Oil Immersed (Measuring) Ring Type 15VA/0.5,1,100,100,100,100,100
+,,no,,Other items,CT 1600/1A 5P20 15VA/0.5 2 Core,1,100,100,100,100,100
+,,no,,Other items,NCT 400/1A 5P20 15VA,1,100,100,100,100,100
+,,no,,Other items,NCT 1600/1A 5P20 15VA,1,100,100,100,100,100
+,,no,,Other items,NCT 2000/1A 5P20 15VA,1,100,100,100,100,100
+,,no,,Other items,CT TERMINAL BOX (2 TERMINALS),1,100,100,100,100,100
+,,no,,Other items,CT TERMINAL BOX (4 TERMINALS),1,100,100,100,100,100
+,,no,,Other items,CT TERMINAL BOX (6 TERMINALS),1,100,100,100,100,100
+,,no,,Other items,24kV ELBOW CONNECTOR SET (03),1,100,100,100,100,100
+,,no,,Other items,36kV ELBOW CONNECTOR SET (03),1,100,100,100,100,100
+,,no,,Other items,52kV ELBOW CONNECTOR SET (04),1,100,100,100,100,100
+,,no,,Other items,OBO SURGE ARRESTERS,1,100,100,100,100,100
+,,no,,Other items,LTL Name Board,1,100,100,100,100,100
+,,no,,Other items,Nut Bolt & 2 Washers (Galvanized) M10 x 40 mm,1,100,100,100,100,100
+,,no,,Other items,Split washers for tank cover fixing,1,100,100,100,100,100
+,,no,,Other items,M12 bolt nut spring washer & lock washer for earthing terminal,1,100,100,100,100,100
+,,no,,Other items,Flange Gasket,1,100,100,100,100,100
+,,no,,Other items,Wooden Pallete For Packing,1,100,100,100,100,100
+,,no,,Other items,Surge Arresters,1,100,100,100,100,100
+,,no,,Finishing,Painting,1,100,100,100,100,100
+,,no,,Finishing,GALVANIZING,1,100,100,100,100,100
+,,no,,Finishing,PRIMER PAINT & THINNER,1,100,100,100,100,100
+,,no,,Finishing,POWDER PAINT (RAL6028) Marine Grade,1,100,100,100,100,100
+,,no,,Finishing,INTERNAL PAINT,1,100,100,100,100,100
