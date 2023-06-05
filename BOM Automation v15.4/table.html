@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Item</th>
+        <th>Qty</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+    </tbody>
+  </table>
+
+  <script>
+    // Get the table body element
+    var tableBody = document.getElementById("table-body");
+
+    // Generate 50 rows
+    for (var i = 1; i <= 50; i++) {
+      // Create a new row element
+      var row = document.createElement("tr");
+
+      // Create three new cell elements and set their content
+      var cell1 = document.createElement("td");
+      cell1.textContent = "Row " + i + ", Column 1";
+      row.appendChild(cell1);
+
+      var cell2 = document.createElement("td");
+      cell2.textContent = "Row " + i + ", Column 2";
+      row.appendChild(cell2);
+
+      var cell3 = document.createElement("td");
+      cell3.textContent = "Row " + i + ", Column 3";
+      row.appendChild(cell3);
+
+      // Append the row to the table body
+      tableBody.appendChild(row);
+    }
+  </script>
+</body>
+</html>
