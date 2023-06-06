@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index HTML</title>
+</head>
+<body>
+  <table id="generated-table">
+    <!-- The table rows will be dynamically generated here -->
+  </table>
+  
+  <script>
+    // Generate the table dynamically
+    function generateTable() {
+      var tableData = ""; // Store the table data as a string
+      
+      // Example data to populate the table
+      var data = [
+        { name: "John", age: 25 },
+        { name: "Jane", age: 30 },
+        { name: "Mark", age: 35 }
+      ];
+      
+      // Generate table rows based on the data
+      for (var i = 0; i < data.length; i++) {
+        tableData += "<tr>";
+        tableData += "<td>" + data[i].name + "</td>";
+        tableData += "<td>" + data[i].age + "</td>";
+        tableData += "</tr>";
+      }
+      
+      // Insert the generated table data into the table element
+      document.getElementById("generated-table").innerHTML = tableData;
+      
+      // Save the generated table in localStorage
+      localStorage.setItem("tableData", tableData);
+    }
+    
+    // Call the function to generate the table
+    generateTable();
+  </script>
+</body>
+</html>

@@ -179,6 +179,13 @@
 
             // Replace the existing tbody with the new sorted tbody
             table.replaceChild(newTbody, tbody);
+
+            // Insert the generated table data into the table element
+            document.getElementById("input").innerHTML = tableData;
+
+            // Save the generated table in localStorage
+            localStorage.setItem("tableData", tableData);
+
         }
 
     </script>

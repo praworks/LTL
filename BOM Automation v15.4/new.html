@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New HTML</title>
+</head>
+<body>
+  <table id="retrieved-table">
+    <!-- The retrieved table will be displayed here -->
+  </table>
+  
+  <script>
+    // Retrieve the table data from localStorage
+    var tableData = localStorage.getItem("tableData");
+    
+    // Insert the retrieved table data into the table element
+    document.getElementById("retrieved-table").innerHTML = tableData;
+  </script>
+</body>
+</html>
