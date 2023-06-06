@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retrieve Stored Table Data</title>
+</head>
+
+<body>
+    <h1>Stored Table Data</h1>
+    <table id="retrieved-table"></table>
+
+    <script>
+        // Retrieve the stored table data from localStorage
+        var storedTableData = localStorage.getItem("tableData");
+
+        // Set the retrieved table data to the table element
+        document.getElementById("retrieved-table").innerHTML = storedTableData;
+    </script>
+</body>
+
+</html>
