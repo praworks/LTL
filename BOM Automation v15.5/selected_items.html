@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Selected Items</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    .highlightYellow {
+      background-color: yellow;
+    }
+  </style>
+  <script>
+    function fetchSelectedItems() {
+      // Get the reference to the original table
+      const originalTable = window.opener.document.getElementById("myTable");
+
+      // Get the selected rows from the original table
+      const selectedRows = Array.from(originalTable.getElementsByTagName("tr")).filter((row) =>
+        row.querySelector("input[type='checkbox']:checked")
+      );
+
+      if (selectedRows.length === 0) {
+        alert("No selected items.");
+        return;
+      }
+
+      // Create a new table for selected items
+      const selectedTable = document.getElementById("selectedTable");
+
+      // Generate table headers
+      const headers = Array.from(originalTable.getElementsByTagName("th")).map((th) => th.textContent);
+      let headerRow = "<tr>";
+      headers.forEach((header) => {
+        headerRow += `<th>${header}</th>`;
+      });
+      headerRow += "</tr>";
+      selectedTable.innerHTML = headerRow;
+
+      // Generate table rows for selected items
+      selectedRows.forEach((row) => {
+        const clonedRow = row.cloneNode(true);
+        selectedTable.appendChild(clonedRow);
+      });
+
+      // Remove the checkbox column from the selected items table
+      selectedTable.querySelectorAll("td:first-child").forEach((td) => {
+        td.remove();
+      });
+    }
+
+    // Call the function to fetch selected items and generate the table
+    window.addEventListener("DOMContentLoaded", fetchSelectedItems);
+  </script>
+</head>
+
+<body>
+  <h3 align="center">Selected Items</h3>
+  <table id="selectedTable"></table>
+</body>
+
+</html>
